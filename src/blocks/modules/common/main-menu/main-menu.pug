@@ -1,0 +1,16 @@
+mixin main-menu(data)
+  .main-menu
+    .main-menu__wrp
+      .main-menu__close(data-menu="close"): +icons('#ic_cross', 35)
+      .main-menu__nav
+        nav
+          ul
+            each item in data
+              li: a(href=item.href)= item.text
+      .main-menu__phones
+        .main-menu__number: a(href='#') +375 (33) 799 34 99
+        .main-menu__worktime: span Работаем с 9.00 до 19.00
+      //- .main-menu__msgr
+      //-   ul
+      //-     li.ic_wa: a(href='#'): +icons('#ic_wa')
+      //-     li.ic_tg: a(href='#'): +icons('#ic_tg')

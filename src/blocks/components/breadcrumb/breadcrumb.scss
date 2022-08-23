@@ -1,0 +1,46 @@
+.breadcrumb {
+
+    background-color: transparent;
+    padding: 0 0 rem(20) 0;
+
+    & ul {
+        display: flex;
+        align-items: center;
+        list-style-type: none;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    & li {
+
+        & a {
+            color: #7A808D;
+            font-size: 14px;
+
+            &:hover {
+                text-decoration: underline;
+                color: $main;
+            }
+        }
+
+        &::after {
+            content: '-';
+            margin: 0 rem(10);
+            color: #7A808D;
+            display: inline-block;
+            border-radius: 50%;
+            position: relative;
+
+            font-size: 14px;
+        }
+
+        &:last-child::after {
+            display: none;
+        }
+
+    }
+
+
+
+
+}

@@ -1,0 +1,20 @@
+include ../helpers/mixins.pug
+
+.block-order
+    .block-order__title Заказ предварительного рачета стоимости
+    .block-order__desc Отправьте свои контакты и наш менеджер свяжется с вами в ближайшее время!
+    .block-order__form
+        form(action='#' method='POST')
+            .form
+              .form__item: .form__subitem: input(type="tel" name="user-phone" placeholder="Номер телефона *")
+              .form__item: .form__subitem: input(type="text" name="user-name" placeholder="Имя *")
+              .form__item: .form__subitem
+                select(name="type")
+                  option(value="0") Выберите тип объекта
+                  option(value="2") Жилой объект (напр, дом, квартира)
+                  option(value="4") Коммерческий (офис, кафе, спортзал и т.п.)
+                  option(value="6") Индустриальный (цех, лаборатория, серверная)
+              .form__item: .form__subitem: input(type="text" name="user-area" placeholder="Площадь помещения, примерно (м2)")
+              .form__item: .form__subitem: button.btn(type="submit") Заказать
+              .form__item: .form__subitem
+                +checkbox('Я соглашаюсь с <a data-src="/_policy.html" data-modal="html" > политикой обработки персональных данных </a>')

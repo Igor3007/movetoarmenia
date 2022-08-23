@@ -1,0 +1,1175 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="theme-color" content="#fff">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link rel="shortcut icon" href="img/favicons/favicon.ico" type="image/x-icon">
+    <link rel="icon" sizes="16x16" href="img/favicons/favicon-16x16.png" type="image/png">
+    <link rel="icon" sizes="32x32" href="img/favicons/favicon-32x32.png" type="image/png">
+    <link rel="apple-touch-icon-precomposed" href="img/favicons/apple-touch-icon-precomposed.png">
+    <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/favicons/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/favicons/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="167x167" href="img/favicons/apple-touch-icon-167x167.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon-180x180.png">
+    <link rel="apple-touch-icon" sizes="1024x1024" href="img/favicons/apple-touch-icon-1024x1024.png">
+    <link rel="stylesheet" href="styles/main.css?v=1.6">
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="header">
+          <div class="header__mobile">
+            <div class="nav__hamburger"><i></i><i></i><i></i></div>
+          </div>
+          <div class="header__logo"><a href="/"><span class="bgimage" style="background-image: url(/img/svg/logo-white.svg)"></span></a></div>
+          <div class="header__nav">
+            <div class="header__menu">
+              <nav>
+                <ul>
+                  <li><a href="/page-contacts.html">Контакты</a></li>
+                  <li><a href="/page-delivery.html">Доставка и сборка</a></li>
+                  <li><a href="/page-design.html">Дизайн спортзала</a></li>
+                  <li><a href="/page-news.html">Статьи</a></li>
+                </ul>
+              </nav>
+            </div>
+            <div class="header__search">
+              <button class="btn" data-modal-catalog="open">
+                <svg width="16" height="16">
+                  <use xlink:href="/img/sprites/sprite.svg#ic_menu-catalog"></use>
+                </svg>Каталог
+              </button>
+              <form action="search-seccess.html">
+                <input type="text" placeholder="Поиск по наименованию или артикулу">
+              </form>
+            </div>
+          </div>
+          <div class="header__callback">
+            <div class="header__number"><a href="tel:88005054983"><span>8 (800) </span>505-49-83</a><span data-fancybox-ajax data-src="/_popup-callback.html"><i></i>Обратный звонок</span></div>
+            <div class="header__basket"><a href="/basket.html" data-count="24">
+                <svg width="25" height="25">
+                  <use xlink:href="/img/sprites/sprite.svg#ic_basket"></use>
+                </svg><span>Ваша корзина пуста</span></a></div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="container"> 
+        <div class="breadcrumb breadcrumb--tab">
+          <ul>
+            <li><a class="active" href="/">1. Ваша корзина</a></li>
+            <li><a href="#">2. Оформление заказа</a></li>
+          </ul>
+        </div>
+        <div class="header-page">
+          <h1>Корзина</h1>
+        </div>
+        <div class="page-basket">
+          <div class="page-basket__main">
+            <div class="page-basket__list">
+              <div class="page-basket__item">
+                <div class="basketcard">
+                  <div class="basketcard__left">
+                    <div class="basketcard__image"><a href="catalog-card.html"><span><img src="/img/products/1.png"/></span></a></div>
+                    <div class="basketcard__main" data-title="Товар">
+                      <div class="basketcard__code">Код товара: 0008448</div>
+                      <div class="basketcard__title"><a href="catalog-card.html">Пресс машина GYM80 Sygnum Medical 3255</a></div>
+                    </div>
+                  </div>
+                  <div class="basketcard__right">
+                    <div class="basketcard__price" data-title="Цена">
+                      <div class="basketcard__price-current"><span>791 300</span> ₽</div>
+                      <div class="basketcard__price-old">791 300 ₽</div>
+                    </div>
+                    <div class="basketcard__count" data-title="Количество">
+                      <div class="basketcard__count-wrp"><span class="basketcard__count-dec">-</span><span class="basketcard__count-num"> 
+                          <input type="text" value="1"/></span><span class="basketcard__count-inc">+</span></div>
+                    </div>
+                    <div class="basketcard__cost" data-title="Сумма">
+                      <div class="basketcard__price-current"><span>791 300</span> ₽</div>
+                    </div>
+                    <div class="basketcard__remove">
+                      <svg width="22" height="22">
+                        <use xlink:href="/img/sprites/sprite.svg#ic_close"></use>
+                      </svg>Удалить
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="page-basket__item">
+                <div class="basketcard">
+                  <div class="basketcard__left">
+                    <div class="basketcard__image"><a href="catalog-card.html"><span><img src="/img/products/5.png"/></span></a></div>
+                    <div class="basketcard__main" data-title="Товар">
+                      <div class="basketcard__code">Код товара: 0008448</div>
+                      <div class="basketcard__title"><a href="catalog-card.html">Пресс машина GYM80 Sygnum Medical 3255 Mx 3000</a></div>
+                      <div class="basketcard__stick"><span style="background-color: #E73124 ">Акция</span></div>
+                    </div>
+                  </div>
+                  <div class="basketcard__right">
+                    <div class="basketcard__price" data-title="Цена">
+                      <div class="basketcard__price-current"><span>59 300</span> ₽</div>
+                      <div class="basketcard__price-old">59 300 ₽</div>
+                    </div>
+                    <div class="basketcard__count" data-title="Количество">
+                      <div class="basketcard__count-wrp"><span class="basketcard__count-dec">-</span><span class="basketcard__count-num"> 
+                          <input type="text" value="1"/></span><span class="basketcard__count-inc">+</span></div>
+                    </div>
+                    <div class="basketcard__cost" data-title="Сумма">
+                      <div class="basketcard__price-current"><span>59 300</span> ₽</div>
+                    </div>
+                    <div class="basketcard__remove">
+                      <svg width="22" height="22">
+                        <use xlink:href="/img/sprites/sprite.svg#ic_close"></use>
+                      </svg>Удалить
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="page-basket__item">
+                <div class="basketcard">
+                  <div class="basketcard__left">
+                    <div class="basketcard__image"><a href="catalog-card.html"><span><img src="/img/products/3.png"/></span></a></div>
+                    <div class="basketcard__main" data-title="Товар">
+                      <div class="basketcard__code">Код товара: 0008448</div>
+                      <div class="basketcard__title"><a href="catalog-card.html">Пресс машина GYM80 Sygnum Medical 3255</a></div>
+                    </div>
+                  </div>
+                  <div class="basketcard__right">
+                    <div class="basketcard__price" data-title="Цена">
+                      <div class="basketcard__price-current"><span>291 300</span> ₽</div>
+                      <div class="basketcard__price-old">291 300 ₽</div>
+                    </div>
+                    <div class="basketcard__count" data-title="Количество">
+                      <div class="basketcard__count-wrp"><span class="basketcard__count-dec">-</span><span class="basketcard__count-num"> 
+                          <input type="text" value="1"/></span><span class="basketcard__count-inc">+</span></div>
+                    </div>
+                    <div class="basketcard__cost" data-title="Сумма">
+                      <div class="basketcard__price-current"><span>291 300</span> ₽</div>
+                    </div>
+                    <div class="basketcard__remove">
+                      <svg width="22" height="22">
+                        <use xlink:href="/img/sprites/sprite.svg#ic_close"></use>
+                      </svg>Удалить
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="page-basket__item">
+                <div class="basketcard">
+                  <div class="basketcard__left">
+                    <div class="basketcard__image"><a href="catalog-card.html"><span><img src="/img/products/2.png"/></span></a></div>
+                    <div class="basketcard__main" data-title="Товар">
+                      <div class="basketcard__code">Код товара: 0008448</div>
+                      <div class="basketcard__title"><a href="catalog-card.html">Пресс машина GYM80 Sygnum Medical 3255</a></div>
+                      <div class="basketcard__stick"><span style="background-color: #5BB92F ">Новика</span></div>
+                    </div>
+                  </div>
+                  <div class="basketcard__right">
+                    <div class="basketcard__price" data-title="Цена">
+                      <div class="basketcard__price-current"><span>79 300</span> ₽</div>
+                      <div class="basketcard__price-old">79 300 ₽</div>
+                    </div>
+                    <div class="basketcard__count" data-title="Количество">
+                      <div class="basketcard__count-wrp"><span class="basketcard__count-dec">-</span><span class="basketcard__count-num"> 
+                          <input type="text" value="1"/></span><span class="basketcard__count-inc">+</span></div>
+                    </div>
+                    <div class="basketcard__cost" data-title="Сумма">
+                      <div class="basketcard__price-current"><span>79 300</span> ₽</div>
+                    </div>
+                    <div class="basketcard__remove">
+                      <svg width="22" height="22">
+                        <use xlink:href="/img/sprites/sprite.svg#ic_close"></use>
+                      </svg>Удалить
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="page-basket__item">
+                <div class="basketcard">
+                  <div class="basketcard__left">
+                    <div class="basketcard__image"><a href="catalog-card.html"><span><img src="/img/products/6.png"/></span></a></div>
+                    <div class="basketcard__main" data-title="Товар">
+                      <div class="basketcard__code">Код товара: 0008448</div>
+                      <div class="basketcard__title"><a href="catalog-card.html">Пресс машина GYM80 Sygnum Medical 3255</a></div>
+                    </div>
+                  </div>
+                  <div class="basketcard__right">
+                    <div class="basketcard__price" data-title="Цена">
+                      <div class="basketcard__price-current"><span>91 300</span> ₽</div>
+                      <div class="basketcard__price-old">91 300 ₽</div>
+                    </div>
+                    <div class="basketcard__count" data-title="Количество">
+                      <div class="basketcard__count-wrp"><span class="basketcard__count-dec">-</span><span class="basketcard__count-num"> 
+                          <input type="text" value="1"/></span><span class="basketcard__count-inc">+</span></div>
+                    </div>
+                    <div class="basketcard__cost" data-title="Сумма">
+                      <div class="basketcard__price-current"><span>91 300</span> ₽</div>
+                    </div>
+                    <div class="basketcard__remove">
+                      <svg width="22" height="22">
+                        <use xlink:href="/img/sprites/sprite.svg#ic_close"></use>
+                      </svg>Удалить
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="page-basket__item">
+                <div class="basketcard">
+                  <div class="basketcard__left">
+                    <div class="basketcard__image"><a href="catalog-card.html"><span><img src="/img/products/4.png"/></span></a></div>
+                    <div class="basketcard__main" data-title="Товар">
+                      <div class="basketcard__code">Код товара: 0008448</div>
+                      <div class="basketcard__title"><a href="catalog-card.html">Пресс машина GYM80 Sygnum Medical 3255</a></div>
+                      <div class="basketcard__stick"><span style="background-color: #A83BB1 ">Хит продаж</span></div>
+                    </div>
+                  </div>
+                  <div class="basketcard__right">
+                    <div class="basketcard__price" data-title="Цена">
+                      <div class="basketcard__price-current"><span>191 300</span> ₽</div>
+                      <div class="basketcard__price-old">191 300 ₽</div>
+                    </div>
+                    <div class="basketcard__count" data-title="Количество">
+                      <div class="basketcard__count-wrp"><span class="basketcard__count-dec">-</span><span class="basketcard__count-num"> 
+                          <input type="text" value="1"/></span><span class="basketcard__count-inc">+</span></div>
+                    </div>
+                    <div class="basketcard__cost" data-title="Сумма">
+                      <div class="basketcard__price-current"><span>191 300</span> ₽</div>
+                    </div>
+                    <div class="basketcard__remove">
+                      <svg width="22" height="22">
+                        <use xlink:href="/img/sprites/sprite.svg#ic_close"></use>
+                      </svg>Удалить
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="page-basket__item">
+                <div class="basketcard">
+                  <div class="basketcard__left">
+                    <div class="basketcard__image"><a href="catalog-card.html"><span><img src="/img/products/10.png"/></span></a></div>
+                    <div class="basketcard__main" data-title="Товар">
+                      <div class="basketcard__code">Код товара: 0008448</div>
+                      <div class="basketcard__title"><a href="catalog-card.html">Пресс машина GYM80 Sygnum Medical 3255</a></div>
+                      <div class="basketcard__stick"><span style="background-color: #5BB92F ">Новика</span></div>
+                    </div>
+                  </div>
+                  <div class="basketcard__right">
+                    <div class="basketcard__price" data-title="Цена">
+                      <div class="basketcard__price-current"><span>79 300</span> ₽</div>
+                      <div class="basketcard__price-old">79 300 ₽</div>
+                    </div>
+                    <div class="basketcard__count" data-title="Количество">
+                      <div class="basketcard__count-wrp"><span class="basketcard__count-dec">-</span><span class="basketcard__count-num"> 
+                          <input type="text" value="1"/></span><span class="basketcard__count-inc">+</span></div>
+                    </div>
+                    <div class="basketcard__cost" data-title="Сумма">
+                      <div class="basketcard__price-current"><span>79 300</span> ₽</div>
+                    </div>
+                    <div class="basketcard__remove">
+                      <svg width="22" height="22">
+                        <use xlink:href="/img/sprites/sprite.svg#ic_close"></use>
+                      </svg>Удалить
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="page-basket__item">
+                <div class="basketcard">
+                  <div class="basketcard__left">
+                    <div class="basketcard__image"><a href="catalog-card.html"><span><img src="/img/products/9.png"/></span></a></div>
+                    <div class="basketcard__main" data-title="Товар">
+                      <div class="basketcard__code">Код товара: 0008448</div>
+                      <div class="basketcard__title"><a href="catalog-card.html">Пресс машина GYM80 Sygnum Medical 3255</a></div>
+                    </div>
+                  </div>
+                  <div class="basketcard__right">
+                    <div class="basketcard__price" data-title="Цена">
+                      <div class="basketcard__price-current"><span>91 300</span> ₽</div>
+                      <div class="basketcard__price-old">91 300 ₽</div>
+                    </div>
+                    <div class="basketcard__count" data-title="Количество">
+                      <div class="basketcard__count-wrp"><span class="basketcard__count-dec">-</span><span class="basketcard__count-num"> 
+                          <input type="text" value="1"/></span><span class="basketcard__count-inc">+</span></div>
+                    </div>
+                    <div class="basketcard__cost" data-title="Сумма">
+                      <div class="basketcard__price-current"><span>91 300</span> ₽</div>
+                    </div>
+                    <div class="basketcard__remove">
+                      <svg width="22" height="22">
+                        <use xlink:href="/img/sprites/sprite.svg#ic_close"></use>
+                      </svg>Удалить
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="page-basket__item">
+                <div class="basketcard">
+                  <div class="basketcard__left">
+                    <div class="basketcard__image"><a href="catalog-card.html"><span><img src="/img/products/8.png"/></span></a></div>
+                    <div class="basketcard__main" data-title="Товар">
+                      <div class="basketcard__code">Код товара: 0008448</div>
+                      <div class="basketcard__title"><a href="catalog-card.html">Пресс машина GYM80 Sygnum Medical 3255</a></div>
+                      <div class="basketcard__stick"><span style="background-color: #A83BB1 ">Хит продаж</span></div>
+                    </div>
+                  </div>
+                  <div class="basketcard__right">
+                    <div class="basketcard__price" data-title="Цена">
+                      <div class="basketcard__price-current"><span>191 300</span> ₽</div>
+                      <div class="basketcard__price-old">191 300 ₽</div>
+                    </div>
+                    <div class="basketcard__count" data-title="Количество">
+                      <div class="basketcard__count-wrp"><span class="basketcard__count-dec">-</span><span class="basketcard__count-num"> 
+                          <input type="text" value="1"/></span><span class="basketcard__count-inc">+</span></div>
+                    </div>
+                    <div class="basketcard__cost" data-title="Сумма">
+                      <div class="basketcard__price-current"><span>191 300</span> ₽</div>
+                    </div>
+                    <div class="basketcard__remove">
+                      <svg width="22" height="22">
+                        <use xlink:href="/img/sprites/sprite.svg#ic_close"></use>
+                      </svg>Удалить
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="page-basket__item">
+                <div class="basketcard">
+                  <div class="basketcard__left">
+                    <div class="basketcard__image"><a href="catalog-card.html"><span><img src="/img/products/7.png"/></span></a></div>
+                    <div class="basketcard__main" data-title="Товар">
+                      <div class="basketcard__code">Код товара: 0008448</div>
+                      <div class="basketcard__title"><a href="catalog-card.html">Пресс машина GYM80 Sygnum Medical 3255</a></div>
+                      <div class="basketcard__stick"><span style="background-color: #A83BB1 ">Хит продаж</span></div>
+                    </div>
+                  </div>
+                  <div class="basketcard__right">
+                    <div class="basketcard__price" data-title="Цена">
+                      <div class="basketcard__price-current"><span>191 300</span> ₽</div>
+                      <div class="basketcard__price-old">191 300 ₽</div>
+                    </div>
+                    <div class="basketcard__count" data-title="Количество">
+                      <div class="basketcard__count-wrp"><span class="basketcard__count-dec">-</span><span class="basketcard__count-num"> 
+                          <input type="text" value="1"/></span><span class="basketcard__count-inc">+</span></div>
+                    </div>
+                    <div class="basketcard__cost" data-title="Сумма">
+                      <div class="basketcard__price-current"><span>191 300</span> ₽</div>
+                    </div>
+                    <div class="basketcard__remove">
+                      <svg width="22" height="22">
+                        <use xlink:href="/img/sprites/sprite.svg#ic_close"></use>
+                      </svg>Удалить
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="page-similar">
+              <div class="similar-product">
+                <div class="similar-product__title" id="similar">
+                  <div class="section-h2">Рекомендуемые товары</div>
+                  <div class="swiper-nav">
+                    <div class="swiper-nav__prev similar-product__swiper">
+                      <svg width="25" height="25">
+                        <use xlink:href="/img/sprites/sprite.svg#ic_arrow-left"></use>
+                      </svg>
+                    </div>
+                    <div class="swiper-nav__next similar-product__swiper">
+                      <svg width="25" height="25">
+                        <use xlink:href="/img/sprites/sprite.svg#ic_arrow-right"></use>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <div class="similar-product__slider">
+                  <div class="swiper-container similar-product__swiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <div class="minicard minicard--small">
+                          <div class="minicard__image">
+                            <div class="swiper-wrapper">
+                              <div class="swiper-slide"><a href="catalog-card.html"><span class="img-contain"><img src="/img/products/1.png" alt=""/></span></a></div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                          </div>
+                          <div class="minicard__props">
+                            <div class="minicard__price"><span class="minicard__price-act">791 300</span><span class="minicard__price-old">931 300</span></div>
+                            <div class="minicard__title"><a href="/catalog-card.html">Пресс машина GYM80 Sygnum Medical 3255</a></div>
+                            <div class="minicard__action">
+                              <div class="minicard__to-basket">
+                                <button class="btn">в корзину</button>
+                              </div>
+                              <div class="minicard__one-click"><span>Купить</span><span>в один клик</span></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="minicard minicard--small">
+                          <div class="minicard__image">
+                            <div class="minicard__stick" style="background-color: #E73124 ">Акция</div>
+                            <div class="swiper-wrapper">
+                              <div class="swiper-slide"><a href="catalog-card.html"><span class="img-contain"><img src="/img/products/5.png" alt=""/></span></a></div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                          </div>
+                          <div class="minicard__props">
+                            <div class="minicard__price"><span class="minicard__price-act">59 300</span><span class="minicard__price-old">931 300</span></div>
+                            <div class="minicard__title"><a href="/catalog-card.html">Пресс машина GYM80 Sygnum Medical 3255 Mx 3000</a></div>
+                            <div class="minicard__action">
+                              <div class="minicard__to-basket">
+                                <button class="btn">в корзину</button>
+                              </div>
+                              <div class="minicard__one-click"><span>Купить</span><span>в один клик</span></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="minicard minicard--small">
+                          <div class="minicard__image">
+                            <div class="swiper-wrapper">
+                              <div class="swiper-slide"><a href="catalog-card.html"><span class="img-contain"><img src="/img/products/3.png" alt=""/></span></a></div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                          </div>
+                          <div class="minicard__props">
+                            <div class="minicard__price"><span class="minicard__price-act">291 300</span><span class="minicard__price-old">931 300</span></div>
+                            <div class="minicard__title"><a href="/catalog-card.html">Пресс машина GYM80 Sygnum Medical 3255</a></div>
+                            <div class="minicard__action">
+                              <div class="minicard__to-basket">
+                                <button class="btn">в корзину</button>
+                              </div>
+                              <div class="minicard__one-click"><span>Купить</span><span>в один клик</span></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="minicard minicard--small">
+                          <div class="minicard__image">
+                            <div class="minicard__stick" style="background-color: #5BB92F ">Новика</div>
+                            <div class="swiper-wrapper">
+                              <div class="swiper-slide"><a href="catalog-card.html"><span class="img-contain"><img src="/img/products/2.png" alt=""/></span></a></div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                          </div>
+                          <div class="minicard__props">
+                            <div class="minicard__price"><span class="minicard__price-act">79 300</span><span class="minicard__price-old">93 300</span></div>
+                            <div class="minicard__title"><a href="/catalog-card.html">Пресс машина GYM80 Sygnum Medical 3255</a></div>
+                            <div class="minicard__action">
+                              <div class="minicard__to-basket">
+                                <button class="btn">в корзину</button>
+                              </div>
+                              <div class="minicard__one-click"><span>Купить</span><span>в один клик</span></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="minicard minicard--small">
+                          <div class="minicard__image">
+                            <div class="swiper-wrapper">
+                              <div class="swiper-slide"><a href="catalog-card.html"><span class="img-contain"><img src="/img/products/6.png" alt=""/></span></a></div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                          </div>
+                          <div class="minicard__props">
+                            <div class="minicard__price"><span class="minicard__price-act">91 300</span><span class="minicard__price-old">93 300</span></div>
+                            <div class="minicard__title"><a href="/catalog-card.html">Пресс машина GYM80 Sygnum Medical 3255</a></div>
+                            <div class="minicard__action">
+                              <div class="minicard__to-basket">
+                                <button class="btn">в корзину</button>
+                              </div>
+                              <div class="minicard__one-click"><span>Купить</span><span>в один клик</span></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="minicard minicard--small">
+                          <div class="minicard__image">
+                            <div class="minicard__stick" style="background-color: #A83BB1 ">Хит продаж</div>
+                            <div class="swiper-wrapper">
+                              <div class="swiper-slide"><a href="catalog-card.html"><span class="img-contain"><img src="/img/products/4.png" alt=""/></span></a></div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                          </div>
+                          <div class="minicard__props">
+                            <div class="minicard__price"><span class="minicard__price-act">191 300</span><span class="minicard__price-old">231 300</span></div>
+                            <div class="minicard__title"><a href="/catalog-card.html">Пресс машина GYM80 Sygnum Medical 3255</a></div>
+                            <div class="minicard__action">
+                              <div class="minicard__to-basket">
+                                <button class="btn">в корзину</button>
+                              </div>
+                              <div class="minicard__one-click"><span>Купить</span><span>в один клик</span></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="minicard minicard--small">
+                          <div class="minicard__image">
+                            <div class="minicard__stick" style="background-color: #5BB92F ">Новика</div>
+                            <div class="swiper-wrapper">
+                              <div class="swiper-slide"><a href="catalog-card.html"><span class="img-contain"><img src="/img/products/10.png" alt=""/></span></a></div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                          </div>
+                          <div class="minicard__props">
+                            <div class="minicard__price"><span class="minicard__price-act">79 300</span><span class="minicard__price-old">93 300</span></div>
+                            <div class="minicard__title"><a href="/catalog-card.html">Пресс машина GYM80 Sygnum Medical 3255</a></div>
+                            <div class="minicard__action">
+                              <div class="minicard__to-basket">
+                                <button class="btn">в корзину</button>
+                              </div>
+                              <div class="minicard__one-click"><span>Купить</span><span>в один клик</span></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="minicard minicard--small">
+                          <div class="minicard__image">
+                            <div class="swiper-wrapper">
+                              <div class="swiper-slide"><a href="catalog-card.html"><span class="img-contain"><img src="/img/products/9.png" alt=""/></span></a></div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                          </div>
+                          <div class="minicard__props">
+                            <div class="minicard__price"><span class="minicard__price-act">91 300</span><span class="minicard__price-old">93 300</span></div>
+                            <div class="minicard__title"><a href="/catalog-card.html">Пресс машина GYM80 Sygnum Medical 3255</a></div>
+                            <div class="minicard__action">
+                              <div class="minicard__to-basket">
+                                <button class="btn">в корзину</button>
+                              </div>
+                              <div class="minicard__one-click"><span>Купить</span><span>в один клик</span></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="minicard minicard--small">
+                          <div class="minicard__image">
+                            <div class="minicard__stick" style="background-color: #A83BB1 ">Хит продаж</div>
+                            <div class="swiper-wrapper">
+                              <div class="swiper-slide"><a href="catalog-card.html"><span class="img-contain"><img src="/img/products/8.png" alt=""/></span></a></div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                          </div>
+                          <div class="minicard__props">
+                            <div class="minicard__price"><span class="minicard__price-act">191 300</span><span class="minicard__price-old">231 300</span></div>
+                            <div class="minicard__title"><a href="/catalog-card.html">Пресс машина GYM80 Sygnum Medical 3255</a></div>
+                            <div class="minicard__action">
+                              <div class="minicard__to-basket">
+                                <button class="btn">в корзину</button>
+                              </div>
+                              <div class="minicard__one-click"><span>Купить</span><span>в один клик</span></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="minicard minicard--small">
+                          <div class="minicard__image">
+                            <div class="minicard__stick" style="background-color: #A83BB1 ">Хит продаж</div>
+                            <div class="swiper-wrapper">
+                              <div class="swiper-slide"><a href="catalog-card.html"><span class="img-contain"><img src="/img/products/7.png" alt=""/></span></a></div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                          </div>
+                          <div class="minicard__props">
+                            <div class="minicard__price"><span class="minicard__price-act">191 300</span><span class="minicard__price-old">231 300</span></div>
+                            <div class="minicard__title"><a href="/catalog-card.html">Пресс машина GYM80 Sygnum Medical 3255</a></div>
+                            <div class="minicard__action">
+                              <div class="minicard__to-basket">
+                                <button class="btn">в корзину</button>
+                              </div>
+                              <div class="minicard__one-click"><span>Купить</span><span>в один клик</span></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="page-basket__aside">
+            <div class="basket-aside">
+              <div class="basket-aside__item">
+                <div class="basket-aside__count"><span class="total-count-aside">3 </span>товара на сумму</div>
+                <div class="basket-aside__cost"> <span class="total-price-aside">0.000</span>₽</div>
+              </div>
+              <div class="basket-aside__button"> <a href="/basket-ordering.html">
+                  <button class="btn btn-blue btn-full">Оформить заказ</button></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="container">
+        <div class="footer">
+          <div class="footer__logo">
+            <div class="footer__img"><span class="bgimage" style="background-image: url(/img/svg/logo-white.svg)"></span>
+            </div>
+            <div class="footer__social">
+              <div class="footer__boxtitle">Присоединяйтесь</div>
+              <ul>
+                <li><a href="#">
+                    <svg width="30" height="30">
+                      <use xlink:href="/img/sprites/sprite.svg#ic_vk-footer"></use>
+                    </svg></a></li>
+                <li><a href="#">
+                    <svg width="30" height="30">
+                      <use xlink:href="/img/sprites/sprite.svg#ic_fb-footer"></use>
+                    </svg></a></li>
+                <li><a href="#">
+                    <svg width="30" height="30">
+                      <use xlink:href="/img/sprites/sprite.svg#ic_ig-footer"></use>
+                    </svg></a></li>
+                <li><a href="#">
+                    <svg width="30" height="30">
+                      <use xlink:href="/img/sprites/sprite.svg#ic_yt-footer"></use>
+                    </svg></a></li>
+              </ul>
+            </div>
+            <div class="footer__desc">Велнесс Галерея — Продажа профессионального и домашнего фитнес оборудования. Проектирование коммерческих и домашних фитнесс залов.</div>
+          </div>
+          <div class="footer__eshop">
+            <div class="footer__boxtitle">Интернет-магазин</div>
+            <ul>
+              <li><a href="#">Доставка и сборка</a></li>
+              <li><a href="#">Каталог</a></li>
+              <li><a href="#">Бренды</a></li>
+            </ul>
+          </div>
+          <div class="footer__about">
+            <div class="footer__boxtitle">О компании</div>
+            <ul>
+              <li><a href="#">Контакты</a></li>
+              <li><a href="#">Статьи</a></li>
+              <li><a href="#">Сотрудничество</a></li>
+              <li><a href="#">Дизайн спортзала </a></li>
+            </ul>
+          </div>
+          <div class="footer__payment">
+            <div class="footer__boxtitle">Принимаем к оплате</div>
+            <ul>
+              <li><a href="#"><span class="bgimage" style="background-image: url(/img/svg/ic_payment-visa.svg)"></span></a></li>
+              <li><a href="#"><span class="bgimage" style="background-image: url(/img/svg/ic_payment-mc.svg)"></span></a></li>
+              <li class="alfa"><a href="#"><span class="bgimage" style="background-image: url(/img/svg/ic_payment-alfa.svg)"></span></a></li>
+            </ul>
+            <div class="footer__contacts">
+              <div class="footer__phone"><a href="tel:8 (800) 505-49-83">8 (800) 505-49-83</a></div>
+              <div class="footer__email"><a href="mailto:doc@wellgallery.ru">doc@wellgallery.ru</a></div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-copyright">
+          <div class="footer-copyright__info">© 2005-2020 wellgallery.ru</div>
+          <div class="footer-copyright__politic"><a href="/politic.html" target="_blank">Политика конфиденциальности</a></div>
+        </div>
+      </div>
+      <div class="fixed-phone active">
+        <div class="fixed-phone__number"><a href="tel:88005054983">8 (800) 505-49-83</a></div>
+        <div class="fixed-phone__call"><a href="#" data-fancybox-ajax="" data-src="/_popup-callback.html"><i></i><span>Обратный звонок</span></a></div>
+      </div>
+            <div class="mobile">
+              <div class="mobile__overlay"></div>
+              <div class="mobile__left">
+                <div class="mobile-menu">
+                  <div class="mobile-menu__main">
+                    <div class="mobile-main">
+                      <div class="mobile-main__top-link">
+                        <ul> 
+                          <li><a href="catalog.html">
+                              <svg width="25" height="25">
+                                <use xlink:href="/img/sprites/sprite.svg#ic_discont"></use>
+                              </svg><span>Распродажа</span></a></li>
+                          <li data-rol="open-catalog"><a href="#">
+                              <svg width="25" height="25">
+                                <use xlink:href="/img/sprites/sprite.svg#ic_catalog"></use>
+                              </svg><span>Каталог</span></a></li>
+                        </ul>
+                      </div>
+                      <div class="mobile-main__nav">
+                        <nav> 
+                          <ul> 
+                            <li><a href="page-delivery.html">Доставка и сборка</a></li>
+                            <li><a href="page-design.html">Дизайн спортзала</a></li>
+                            <li><a href="page-about.html">О компании</a></li>
+                            <li><a href="page-collaboration.html">Сотрудничество</a></li>
+                            <li><a href="page-news.html">Статьи</a></li>
+                            <li><a href="page-contacts.html">Контакты</a></li>
+                          </ul>
+                        </nav>
+                      </div>
+                      <div class="mobile-main__footer">
+                        <div class="footer__payment">
+                          <div class="footer__contacts">
+                            <div class="footer__phone"><a href="tel:8 (800) 505-49-83">8 (800) 505-49-83</a></div>
+                            <div class="footer__email"><a href="mailto:doc@wellgallery.ru">doc@wellgallery.ru</a></div>
+                          </div>
+                          <div class="footer__boxtitle">Принимаем к оплате</div>
+                          <ul>
+                            <li><a href="#"><span class="bgimage" style="background-image: url(/img/svg/ic_payment-visa.svg)"></span></a></li>
+                            <li><a href="#"><span class="bgimage" style="background-image: url(/img/svg/ic_payment-mc.svg)"></span></a></li>
+                            <li class="alfa"><a href="#"><span class="bgimage" style="background-image: url(/img/svg/ic_payment-alfa.svg)"></span></a></li>
+                          </ul>
+                        </div>
+                        <div class="footer__social">
+                          <div class="footer__boxtitle">Присоединяйтесь</div>
+                          <ul>
+                            <li><a href="#">
+                                <svg width="30" height="30">
+                                  <use xlink:href="/img/sprites/sprite.svg#ic_vk-footer"></use>
+                                </svg></a></li>
+                            <li><a href="#">
+                                <svg width="30" height="30">
+                                  <use xlink:href="/img/sprites/sprite.svg#ic_fb-footer"></use>
+                                </svg></a></li>
+                            <li><a href="#">
+                                <svg width="30" height="30">
+                                  <use xlink:href="/img/sprites/sprite.svg#ic_ig-footer"></use>
+                                </svg></a></li>
+                            <li><a href="#">
+                                <svg width="30" height="30">
+                                  <use xlink:href="/img/sprites/sprite.svg#ic_yt-footer"></use>
+                                </svg></a></li>
+                          </ul>
+                        </div>
+                        <div class="footer__politic"><a href="#">Политика конфиденциальности</a></div>
+                        <div class="footer__copyright">© 2005-2020 wellgallery.ru</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mobile-menu__pane" data-rol="catalog" style="display: none;">
+                    <div class="mobile-menu__back">Назад</div>
+                    <div class="mobile-menu__list">
+                      <ul>
+                        <li><span class="bgimage" style="background-image: url(/img/categories/Vector.svg)"></span><a href="#">Кардиотренажеры</a>
+                          <ul class="sub-cat">
+                            <li><a href="/catalog.html">Многофункциональные силовые тренажеры</a></li>
+                            <li><a href="/catalog.html">Мультистанции для тренировок</a></li>
+                            <li><a href="/catalog.html">Стойки для силовых тренировок</a></li>
+                            <li><a href="/catalog.html">Блочные тренажеры кроссоверы</a></li>
+                            <li><a href="/catalog.html">Тренажеры для функционального тренинга</a></li>
+                            <li><a href="/catalog.html">Модульная система</a></li>
+                          </ul>
+                        </li>
+                        <li><span class="bgimage" style="background-image: url(/img/categories/Vector-1.svg)"></span><a href="#">Универсальные силовые тренажеры</a>
+                          <ul class="sub-cat">
+                            <li><a href="/catalog.html">Многофункциональные силовые тренажеры</a></li>
+                            <li><a href="/catalog.html">Мультистанции для тренировок</a></li>
+                            <li><a href="/catalog.html">Стойки для силовых тренировок</a></li>
+                            <li><a href="/catalog.html">Блочные тренажеры кроссоверы</a></li>
+                            <li><a href="/catalog.html">Тренажеры для функционального тренинга</a></li>
+                            <li><a href="/catalog.html">Модульная система</a></li>
+                            <li><a href="/catalog.html">Мультистанции для тренировок</a></li>
+                            <li><a href="/catalog.html">Стойки для силовых тренировок</a></li>
+                            <li><a href="/catalog.html">Блочные тренажеры кроссоверы</a></li>
+                            <li><a href="/catalog.html">Тренажеры для функционального тренинга</a></li>
+                            <li><a href="/catalog.html">Модульная система</a></li>
+                          </ul>
+                        </li>
+                        <li><span class="bgimage" style="background-image: url(/img/categories/Vector-2.svg)"></span><a href="#">Силовые тренажеры</a>
+                          <ul class="sub-cat">
+                            <li><a href="/catalog.html">Многофункциональные силовые тренажеры</a></li>
+                            <li><a href="/catalog.html">Мультистанции для тренировок</a></li>
+                            <li><a href="/catalog.html">Стойки для силовых тренировок</a></li>
+                            <li><a href="/catalog.html">Блочные тренажеры кроссоверы</a></li>
+                            <li><a href="/catalog.html">Тренажеры для функционального тренинга</a></li>
+                            <li><a href="/catalog.html">Модульная система</a></li>
+                            <li><a href="/catalog.html">Мультистанции для тренировок</a></li>
+                            <li><a href="/catalog.html">Стойки для силовых тренировок</a></li>
+                            <li><a href="/catalog.html">Блочные тренажеры кроссоверы</a></li>
+                            <li><a href="/catalog.html">Тренажеры для функционального тренинга</a></li>
+                            <li><a href="/catalog.html">Модульная система</a></li>
+                          </ul>
+                        </li>
+                        <li><span class="bgimage" style="background-image: url(/img/categories/Vector-3.svg)"></span><a href="#">Скамьи и стойки</a>
+                          <ul class="sub-cat">
+                            <li><a href="/catalog.html">Многофункциональные силовые тренажеры</a></li>
+                            <li><a href="/catalog.html">Мультистанции для тренировок</a></li>
+                            <li><a href="/catalog.html">Стойки для силовых тренировок</a></li>
+                            <li><a href="/catalog.html">Блочные тренажеры кроссоверы</a></li>
+                            <li><a href="/catalog.html">Тренажеры для функционального тренинга</a></li>
+                            <li><a href="/catalog.html">Модульная система</a></li>
+                            <li><a href="/catalog.html">Мультистанции для тренировок</a></li>
+                            <li><a href="/catalog.html">Стойки для силовых тренировок</a></li>
+                            <li><a href="/catalog.html">Блочные тренажеры кроссоверы</a></li>
+                            <li><a href="/catalog.html">Стойки для силовых тренировок</a></li>
+                            <li><a href="/catalog.html">Блочные тренажеры кроссоверы</a></li>
+                            <li><a href="/catalog.html">Модульная система</a></li>
+                            <li><a href="/catalog.html">Мультистанции для тренировок</a></li>
+                            <li><a href="/catalog.html">Стойки для силовых тренировок</a></li>
+                            <li><a href="/catalog.html">Блочные тренажеры кроссоверы</a></li>
+                            <li><a href="/catalog.html">Стойки для силовых тренировок</a></li>
+                            <li><a href="/catalog.html">Блочные тренажеры кроссоверы</a></li>
+                            <li><a href="/catalog.html">Тренажеры для функционального тренинга</a></li>
+                            <li><a href="/catalog.html">Модульная система</a></li>
+                            <li><a href="/catalog.html">Мультистанции для тренировок</a></li>
+                            <li><a href="/catalog.html">Стойки для силовых тренировок</a></li>
+                            <li><a href="/catalog.html">Блочные тренажеры кроссоверы</a></li>
+                            <li><a href="/catalog.html">Тренажеры для функционального тренинга</a></li>
+                            <li><a href="/catalog.html">Модульная система</a></li>
+                          </ul>
+                        </li>
+                        <li><span class="bgimage" style="background-image: url(/img/categories/Vector-4.svg)"></span><a href="/catalog.html">Свободные веса</a>
+                        </li>
+                        <li><span class="bgimage" style="background-image: url(/img/categories/Vector-5.svg)"></span><a href="/catalog.html">Растяжка и инверсия</a>
+                        </li>
+                        <li><span class="bgimage" style="background-image: url(/img/categories/Vector-6.svg)"></span><a href="/catalog.html">Виброплатформы</a>
+                        </li>
+                        <li><span class="bgimage" style="background-image: url(/img/categories/Vector-7.svg)"></span><a href="/catalog.html">Аксессуары</a>
+                        </li>
+                        <li><span class="bgimage" style="background-image: url(/img/categories/Vector-8.svg)"></span><a href="/catalog.html">Шведские стенки</a>
+                        </li>
+                        <li><span class="bgimage" style="background-image: url(/img/categories/Vector-9.svg)"></span><a href="/catalog.html">Все для массажа</a>
+                        </li>
+                        <li><span class="bgimage" style="background-image: url(/img/categories/Vector-10.svg)"></span><a href="/catalog.html">Активный отдых и детское</a>
+                        </li>
+                        <li><span class="bgimage" style="background-image: url(/img/categories/Vector-11.svg)"></span><a href="/catalog.html">Распродажа</a>
+                        </li>
+                        <li><span class="bgimage" style="background-image: url(/img/categories/Vector-12.svg)"></span><a href="/brands.html">Бренды</a>
+                        </li>
+                        <li><span class="bgimage" style="background-image: url(/img/categories/Vector-12.svg)"></span><a href="#">Бренды</a>
+                          <ul class="sub-cat">
+                            <li class="sub-image"><a href="catalog.html"><span class="bgimage" style="background-image: url(/img/brands/1.png)"></span><span>Panatta</span></a></li>
+                            <li class="sub-image"><a href="catalog.html"><span class="bgimage" style="background-image: url(/img/brands/2.png)"></span><span>Panasonic</span></a></li>
+                            <li class="sub-image"><a href="catalog.html"><span class="bgimage" style="background-image: url(/img/brands/3.png)"></span><span>Bork</span></a></li>
+                            <li class="sub-image"><a href="catalog.html"><span class="bgimage" style="background-image: url(/img/brands/4.png)"></span><span>Power plate</span></a></li>
+                            <li class="sub-image"><a href="catalog.html"><span class="bgimage" style="background-image: url(/img/brands/5.png)"></span><span>Precor</span></a></li>
+                            <li class="sub-image"><a href="catalog.html"><span class="bgimage" style="background-image: url(/img/brands/6.png)"></span><span>Nautilus</span></a></li>
+                            <li class="sub-image"><a href="catalog.html"><span class="bgimage" style="background-image: url(/img/brands/7.png)"></span><span>Yamaguchi</span></a></li>
+                            <li class="sub-image"><a href="catalog.html"><span class="bgimage" style="background-image: url(/img/brands/8.png)"></span><span>Us Media</span></a></li>
+                            <li class="sub-image"><a href="catalog.html"><span class="bgimage" style="background-image: url(/img/brands/9.png)"></span><span>Ab Coaster</span></a></li>
+                            <li class="sub-image"><a href="catalog.html"><span class="bgimage" style="background-image: url(/img/brands/10.png)"></span><span>AeroFit</span></a></li>
+                            <li class="sub-image"><a href="catalog.html"><span class="bgimage" style="background-image: url(/img/brands/11.png)"></span><span>Bosu</span></a></li>
+                            <li class="sub-image"><a href="catalog.html"><span class="bgimage" style="background-image: url(/img/brands/12.png)"></span><span>Cardio Power</span></a></li>
+                            <li class="sub-image"><a href="catalog.html"><span class="bgimage" style="background-image: url(/img/brands/13.png)"></span><span>BN Fitness</span></a></li>
+                            <li class="sub-image"><a href="catalog.html"><span class="bgimage" style="background-image: url(/img/brands/14.png)"></span><span>Apple Gate</span></a></li>
+                            <li class="sub-image"><a href="catalog.html"><span class="bgimage" style="background-image: url(/img/brands/15.png)"></span><span>Ammity</span></a></li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal-catalog">
+              <div class="modal-catalog__overlay" data-modal-catalog="close"></div>
+              <div class="modal-catalog__content">
+                <div class="modal-catalog__topbar">
+                  <button class="btn btn-blue" data-modal-catalog="close"> 
+                    <svg width="25" height="25">
+                      <use xlink:href="/img/sprites/sprite.svg#ic_menu-catalog"></use>
+                    </svg>Каталог
+                  </button>
+                </div>
+                <div class="modal-catalog__main">
+                  <div class="modal-catalog__category">
+                    <div class="modal-catalog__list">
+                      <ul>
+                        <li><span class="bgimage" style="background-image: url(/img/categories/Vector.svg)"></span><a href="#">Кардиотренажеры</a>
+                          <div class="modal-catalog__subcat">
+                                  <div class="category-card">
+                                    <div class="category-card__img"><span class="img-contain"><a href="/catalog.html"><img src="/img/products/1.png" alt=""></a></span></div>
+                                    <div class="category-card__title"><a href="/catalog.html">Многофункциональные силовые тренажеры</a></div>
+                                  </div>
+                                  <div class="category-card">
+                                    <div class="category-card__img"><span class="img-contain"><a href="/catalog.html"><img src="/img/products/2.png" alt=""></a></span></div>
+                                    <div class="category-card__title"><a href="/catalog.html">Мультистанции для тренировок</a></div>
+                                  </div>
+                                  <div class="category-card">
+                                    <div class="category-card__img"><span class="img-contain"><a href="/catalog.html"><img src="/img/products/3.png" alt=""></a></span></div>
+                                    <div class="category-card__title"><a href="/catalog.html">Стойки для силовых тренировок</a></div>
+                                  </div>
+                                  <div class="category-card">
+                                    <div class="category-card__img"><span class="img-contain"><a href="/catalog.html"><img src="/img/products/4.png" alt=""></a></span></div>
+                                    <div class="category-card__title"><a href="/catalog.html">Блочные тренажеры кроссоверы</a></div>
+                                  </div>
+                                  <div class="category-card">
+                                    <div class="category-card__img"><span class="img-contain"><a href="/catalog.html"><img src="/img/products/5.png" alt=""></a></span></div>
+                                    <div class="category-card__title"><a href="/catalog.html">Тренажеры для функционального тренинга</a></div>
+                                  </div>
+                                  <div class="category-card">
+                                    <div class="category-card__img"><span class="img-contain"><a href="/catalog.html"><img src="/img/products/6.png" alt=""></a></span></div>
+                                    <div class="category-card__title"><a href="/catalog.html">Модульная система</a></div>
+                                  </div>
+                                  <div class="category-card">
+                                    <div class="category-card__img"><span class="img-contain"><a href="/catalog.html"><img src="/img/products/7.png" alt=""></a></span></div>
+                                    <div class="category-card__title"><a href="/catalog.html">Эксклюзивные тренажеры</a></div>
+                                  </div>
+                                  <div class="category-card">
+                                    <div class="category-card__img"><span class="img-contain"><a href="/catalog.html"><img src="/img/products/8.png" alt=""></a></span></div>
+                                    <div class="category-card__title"><a href="/catalog.html">Тренажеры TRX</a></div>
+                                  </div>
+                                  <div class="category-card">
+                                    <div class="category-card__img"><span class="img-contain"><a href="/catalog.html"><img src="/img/products/9.png" alt=""></a></span></div>
+                                    <div class="category-card__title"><a href="/catalog.html">Машина Смита</a></div>
+                                  </div>
+                          </div>
+                          <div class="modal-catalog__brand">
+                                  <div class="item-brand"><a href="/brands-details.html"><span class="bgimage" style="background-image: url(/img/brands/1.png)"></span></a></div>
+                                  <div class="item-brand"><a href="/brands-details.html"><span class="bgimage" style="background-image: url(/img/brands/2.png)"></span></a></div>
+                                  <div class="item-brand"><a href="/brands-details.html"><span class="bgimage" style="background-image: url(/img/brands/3.png)"></span></a></div>
+                                  <div class="item-brand"><a href="/brands-details.html"><span class="bgimage" style="background-image: url(/img/brands/4.png)"></span></a></div>
+                                  <div class="item-brand"><a href="/brands-details.html"><span class="bgimage" style="background-image: url(/img/brands/5.png)"></span></a></div>
+                                  <div class="item-brand"><a href="/brands-details.html"><span class="bgimage" style="background-image: url(/img/brands/6.png)"></span></a></div>
+                                  <div class="item-brand"><a href="/brands-details.html"><span class="bgimage" style="background-image: url(/img/brands/7.png)"></span></a></div>
+                                  <div class="item-brand"><a href="/brands-details.html"><span class="bgimage" style="background-image: url(/img/brands/8.png)"></span></a></div>
+                                  <div class="item-brand"><a href="/brands-details.html"><span class="bgimage" style="background-image: url(/img/brands/9.png)"></span></a></div>
+                                  <div class="item-brand"><a href="/brands-details.html"><span class="bgimage" style="background-image: url(/img/brands/10.png)"></span></a></div>
+                                  <div class="item-brand"><a href="/brands-details.html"><span class="bgimage" style="background-image: url(/img/brands/11.png)"></span></a></div>
+                                  <div class="item-brand"><a href="/brands-details.html"><span class="bgimage" style="background-image: url(/img/brands/12.png)"></span></a></div>
+                                  <div class="item-brand"><a href="/brands-details.html"><span class="bgimage" style="background-image: url(/img/brands/13.png)"></span></a></div>
+                                  <div class="item-brand"><a href="/brands-details.html"><span class="bgimage" style="background-image: url(/img/brands/14.png)"></span></a></div>
+                                  <div class="item-brand"><a href="/brands-details.html"><span class="bgimage" style="background-image: url(/img/brands/15.png)"></span></a></div>
+                          </div>
+                        </li>
+                        <li><span class="bgimage" style="background-image: url(/img/categories/Vector-1.svg)"></span><a href="#">Универсальные силовые тренажеры</a>
+                          <div class="modal-catalog__subcat">
+                                  <div class="category-card">
+                                    <div class="category-card__img"><span class="img-contain"><a href="/catalog.html"><img src="/img/products/1.png" alt=""></a></span></div>
+                                    <div class="category-card__title"><a href="/catalog.html">Многофункциональные силовые тренажеры</a></div>
+                                  </div>
+                                  <div class="category-card">
+                                    <div class="category-card__img"><span class="img-contain"><a href="/catalog.html"><img src="/img/products/2.png" alt=""></a></span></div>
+                                    <div class="category-card__title"><a href="/catalog.html">Мультистанции для тренировок</a></div>
+                                  </div>
+                                  <div class="category-card">
+                                    <div class="category-card__img"><span class="img-contain"><a href="/catalog.html"><img src="/img/products/3.png" alt=""></a></span></div>
+                                    <div class="category-card__title"><a href="/catalog.html">Стойки для силовых тренировок</a></div>
+                                  </div>
+                                  <div class="category-card">
+                                    <div class="category-card__img"><span class="img-contain"><a href="/catalog.html"><img src="/img/products/1.png" alt=""></a></span></div>
+                                    <div class="category-card__title"><a href="/catalog.html">Многофункциональные силовые тренажеры</a></div>
+                                  </div>
+                                  <div class="category-card">
+                                    <div class="category-card__img"><span class="img-contain"><a href="/catalog.html"><img src="/img/products/4.png" alt=""></a></span></div>
+                                    <div class="category-card__title"><a href="/catalog.html">Блочные тренажеры кроссоверы</a></div>
+                                  </div>
+                                  <div class="category-card">
+                                    <div class="category-card__img"><span class="img-contain"><a href="/catalog.html"><img src="/img/products/2.png" alt=""></a></span></div>
+                                    <div class="category-card__title"><a href="/catalog.html">Мультистанции для тренировок</a></div>
+                                  </div>
+                                  <div class="category-card">
+                                    <div class="category-card__img"><span class="img-contain"><a href="/catalog.html"><img src="/img/products/5.png" alt=""></a></span></div>
+                                    <div class="category-card__title"><a href="/catalog.html">Тренажеры для функционального тренинга</a></div>
+                                  </div>
+                                  <div class="category-card">
+                                    <div class="category-card__img"><span class="img-contain"><a href="/catalog.html"><img src="/img/products/6.png" alt=""></a></span></div>
+                                    <div class="category-card__title"><a href="/catalog.html">Модульная система</a></div>
+                                  </div>
+                                  <div class="category-card">
+                                    <div class="category-card__img"><span class="img-contain"><a href="/catalog.html"><img src="/img/products/7.png" alt=""></a></span></div>
+                                    <div class="category-card__title"><a href="/catalog.html">Эксклюзивные тренажеры</a></div>
+                                  </div>
+                                  <div class="category-card">
+                                    <div class="category-card__img"><span class="img-contain"><a href="/catalog.html"><img src="/img/products/8.png" alt=""></a></span></div>
+                                    <div class="category-card__title"><a href="/catalog.html">Тренажеры TRX</a></div>
+                                  </div>
+                                  <div class="category-card">
+                                    <div class="category-card__img"><span class="img-contain"><a href="/catalog.html"><img src="/img/products/9.png" alt=""></a></span></div>
+                                    <div class="category-card__title"><a href="/catalog.html">Машина Смита</a></div>
+                                  </div>
+                          </div>
+                          <div class="modal-catalog__brand">
+                                  <div class="item-brand"><a href="/brands-details.html"><span class="bgimage" style="background-image: url(/img/brands/1.png)"></span></a></div>
+                                  <div class="item-brand"><a href="/brands-details.html"><span class="bgimage" style="background-image: url(/img/brands/2.png)"></span></a></div>
+                                  <div class="item-brand"><a href="/brands-details.html"><span class="bgimage" style="background-image: url(/img/brands/3.png)"></span></a></div>
+                                  <div class="item-brand"><a href="/brands-details.html"><span class="bgimage" style="background-image: url(/img/brands/4.png)"></span></a></div>
+                                  <div class="item-brand"><a href="/brands-details.html"><span class="bgimage" style="background-image: url(/img/brands/5.png)"></span></a></div>
+                                  <div class="item-brand"><a href="/brands-details.html"><span class="bgimage" style="background-image: url(/img/brands/6.png)"></span></a></div>
+                                  <div class="item-brand"><a href="/brands-details.html"><span class="bgimage" style="background-image: url(/img/brands/7.png)"></span></a></div>
+                                  <div class="item-brand"><a href="/brands-details.html"><span class="bgimage" style="background-image: url(/img/brands/8.png)"></span></a></div>
+                                  <div class="item-brand"><a href="/brands-details.html"><span class="bgimage" style="background-image: url(/img/brands/9.png)"></span></a></div>
+                                  <div class="item-brand"><a href="/brands-details.html"><span class="bgimage" style="background-image: url(/img/brands/10.png)"></span></a></div>
+                                  <div class="item-brand"><a href="/brands-details.html"><span class="bgimage" style="background-image: url(/img/brands/11.png)"></span></a></div>
+                                  <div class="item-brand"><a href="/brands-details.html"><span class="bgimage" style="background-image: url(/img/brands/12.png)"></span></a></div>
+                                  <div class="item-brand"><a href="/brands-details.html"><span class="bgimage" style="background-image: url(/img/brands/13.png)"></span></a></div>
+                                  <div class="item-brand"><a href="/brands-details.html"><span class="bgimage" style="background-image: url(/img/brands/14.png)"></span></a></div>
+                                  <div class="item-brand"><a href="/brands-details.html"><span class="bgimage" style="background-image: url(/img/brands/15.png)"></span></a></div>
+                          </div>
+                        </li>
+                        <li><span class="bgimage" style="background-image: url(/img/categories/Vector-2.svg)"></span><a href="#">Силовые тренажеры</a>
+                          <div class="modal-catalog__subcat">
+                                  <div class="category-card">
+                                    <div class="category-card__img"><span class="img-contain"><a href="/catalog.html"><img src="/img/products/1.png" alt=""></a></span></div>
+                                    <div class="category-card__title"><a href="/catalog.html">Многофункциональные силовые тренажеры</a></div>
+                                  </div>
+                                  <div class="category-card">
+                                    <div class="category-card__img"><span class="img-contain"><a href="/catalog.html"><img src="/img/products/2.png" alt=""></a></span></div>
+                                    <div class="category-card__title"><a href="/catalog.html">Мультистанции для тренировок</a></div>
+                                  </div>
+                                  <div class="category-card">
+                                    <div class="category-card__img"><span class="img-contain"><a href="/catalog.html"><img src="/img/products/3.png" alt=""></a></span></div>
+                                    <div class="category-card__title"><a href="/catalog.html">Стойки для силовых тренировок</a></div>
+                                  </div>
+                                  <div class="category-card">
+                                    <div class="category-card__img"><span class="img-contain"><a href="/catalog.html"><img src="/img/products/4.png" alt=""></a></span></div>
+                                    <div class="category-card__title"><a href="/catalog.html">Блочные тренажеры кроссоверы</a></div>
+                                  </div>
+                                  <div class="category-card">
+                                    <div class="category-card__img"><span class="img-contain"><a href="/catalog.html"><img src="/img/products/5.png" alt=""></a></span></div>
+                                    <div class="category-card__title"><a href="/catalog.html">Тренажеры для функционального тренинга</a></div>
+                                  </div>
+                                  <div class="category-card">
+                                    <div class="category-card__img"><span class="img-contain"><a href="/catalog.html"><img src="/img/products/6.png" alt=""></a></span></div>
+                                    <div class="category-card__title"><a href="/catalog.html">Модульная система</a></div>
+                                  </div>
+                                  <div class="category-card">
+                                    <div class="category-card__img"><span class="img-contain"><a href="/catalog.html"><img src="/img/products/7.png" alt=""></a></span></div>
+                                    <div class="category-card__title"><a href="/catalog.html">Эксклюзивные тренажеры</a></div>
+                                  </div>
+                                  <div class="category-card">
+                                    <div class="category-card__img"><span class="img-contain"><a href="/catalog.html"><img src="/img/products/8.png" alt=""></a></span></div>
+                                    <div class="category-card__title"><a href="/catalog.html">Тренажеры TRX</a></div>
+                                  </div>
+                                  <div class="category-card">
+                                    <div class="category-card__img"><span class="img-contain"><a href="/catalog.html"><img src="/img/products/9.png" alt=""></a></span></div>
+                                    <div class="category-card__title"><a href="/catalog.html">Машина Смита</a></div>
+                                  </div>
+                          </div>
+                          <div class="modal-catalog__brand">
+                                  <div class="item-brand"><a href="/brands-details.html"><span class="bgimage" style="background-image: url(/img/brands/1.png)"></span></a></div>
+                                  <div class="item-brand"><a href="/brands-details.html"><span class="bgimage" style="background-image: url(/img/brands/2.png)"></span></a></div>
+                                  <div class="item-brand"><a href="/brands-details.html"><span class="bgimage" style="background-image: url(/img/brands/3.png)"></span></a></div>
+                                  <div class="item-brand"><a href="/brands-details.html"><span class="bgimage" style="background-image: url(/img/brands/4.png)"></span></a></div>
+                                  <div class="item-brand"><a href="/brands-details.html"><span class="bgimage" style="background-image: url(/img/brands/5.png)"></span></a></div>
+                                  <div class="item-brand"><a href="/brands-details.html"><span class="bgimage" style="background-image: url(/img/brands/6.png)"></span></a></div>
+                                  <div class="item-brand"><a href="/brands-details.html"><span class="bgimage" style="background-image: url(/img/brands/7.png)"></span></a></div>
+                                  <div class="item-brand"><a href="/brands-details.html"><span class="bgimage" style="background-image: url(/img/brands/8.png)"></span></a></div>
+                                  <div class="item-brand"><a href="/brands-details.html"><span class="bgimage" style="background-image: url(/img/brands/9.png)"></span></a></div>
+                                  <div class="item-brand"><a href="/brands-details.html"><span class="bgimage" style="background-image: url(/img/brands/10.png)"></span></a></div>
+                                  <div class="item-brand"><a href="/brands-details.html"><span class="bgimage" style="background-image: url(/img/brands/11.png)"></span></a></div>
+                                  <div class="item-brand"><a href="/brands-details.html"><span class="bgimage" style="background-image: url(/img/brands/12.png)"></span></a></div>
+                                  <div class="item-brand"><a href="/brands-details.html"><span class="bgimage" style="background-image: url(/img/brands/13.png)"></span></a></div>
+                                  <div class="item-brand"><a href="/brands-details.html"><span class="bgimage" style="background-image: url(/img/brands/14.png)"></span></a></div>
+                                  <div class="item-brand"><a href="/brands-details.html"><span class="bgimage" style="background-image: url(/img/brands/15.png)"></span></a></div>
+                          </div>
+                        </li>
+                        <li><span class="bgimage" style="background-image: url(/img/categories/Vector-3.svg)"></span><a href="#">Скамьи и стойки</a>
+                          <div class="modal-catalog__subcat">
+                                  <div class="category-card">
+                                    <div class="category-card__img"><span class="img-contain"><a href="/catalog.html"><img src="/img/products/1.png" alt=""></a></span></div>
+                                    <div class="category-card__title"><a href="/catalog.html">Многофункциональные силовые тренажеры</a></div>
+                                  </div>
+                                  <div class="category-card">
+                                    <div class="category-card__img"><span class="img-contain"><a href="/catalog.html"><img src="/img/products/2.png" alt=""></a></span></div>
+                                    <div class="category-card__title"><a href="/catalog.html">Мультистанции для тренировок</a></div>
+                                  </div>
+                                  <div class="category-card">
+                                    <div class="category-card__img"><span class="img-contain"><a href="/catalog.html"><img src="/img/products/3.png" alt=""></a></span></div>
+                                    <div class="category-card__title"><a href="/catalog.html">Стойки для силовых тренировок</a></div>
+                                  </div>
+                                  <div class="category-card">
+                                    <div class="category-card__img"><span class="img-contain"><a href="/catalog.html"><img src="/img/products/1.png" alt=""></a></span></div>
+                                    <div class="category-card__title"><a href="/catalog.html">Многофункциональные силовые тренажеры</a></div>
+                                  </div>
+                                  <div class="category-card">
+                                    <div class="category-card__img"><span class="img-contain"><a href="/catalog.html"><img src="/img/products/4.png" alt=""></a></span></div>
+                                    <div class="category-card__title"><a href="/catalog.html">Блочные тренажеры кроссоверы</a></div>
+                                  </div>
+                                  <div class="category-card">
+                                    <div class="category-card__img"><span class="img-contain"><a href="/catalog.html"><img src="/img/products/2.png" alt=""></a></span></div>
+                                    <div class="category-card__title"><a href="/catalog.html">Мультистанции для тренировок</a></div>
+                                  </div>
+                                  <div class="category-card">
+                                    <div class="category-card__img"><span class="img-contain"><a href="/catalog.html"><img src="/img/products/5.png" alt=""></a></span></div>
+                                    <div class="category-card__title"><a href="/catalog.html">Тренажеры для функционального тренинга</a></div>
+                                  </div>
+                                  <div class="category-card">
+                                    <div class="category-card__img"><span class="img-contain"><a href="/catalog.html"><img src="/img/products/6.png" alt=""></a></span></div>
+                                    <div class="category-card__title"><a href="/catalog.html">Модульная система</a></div>
+                                  </div>
+                                  <div class="category-card">
+                                    <div class="category-card__img"><span class="img-contain"><a href="/catalog.html"><img src="/img/products/7.png" alt=""></a></span></div>
+                                    <div class="category-card__title"><a href="/catalog.html">Эксклюзивные тренажеры</a></div>
+                                  </div>
+                                  <div class="category-card">
+                                    <div class="category-card__img"><span class="img-contain"><a href="/catalog.html"><img src="/img/products/8.png" alt=""></a></span></div>
+                                    <div class="category-card__title"><a href="/catalog.html">Тренажеры TRX</a></div>
+                                  </div>
+                                  <div class="category-card">
+                                    <div class="category-card__img"><span class="img-contain"><a href="/catalog.html"><img src="/img/products/9.png" alt=""></a></span></div>
+                                    <div class="category-card__title"><a href="/catalog.html">Машина Смита</a></div>
+                                  </div>
+                          </div>
+                          <div class="modal-catalog__brand">
+                                  <div class="item-brand"><a href="/brands-details.html"><span class="bgimage" style="background-image: url(/img/brands/1.png)"></span></a></div>
+                                  <div class="item-brand"><a href="/brands-details.html"><span class="bgimage" style="background-image: url(/img/brands/2.png)"></span></a></div>
+                                  <div class="item-brand"><a href="/brands-details.html"><span class="bgimage" style="background-image: url(/img/brands/3.png)"></span></a></div>
+                                  <div class="item-brand"><a href="/brands-details.html"><span class="bgimage" style="background-image: url(/img/brands/4.png)"></span></a></div>
+                                  <div class="item-brand"><a href="/brands-details.html"><span class="bgimage" style="background-image: url(/img/brands/5.png)"></span></a></div>
+                                  <div class="item-brand"><a href="/brands-details.html"><span class="bgimage" style="background-image: url(/img/brands/6.png)"></span></a></div>
+                                  <div class="item-brand"><a href="/brands-details.html"><span class="bgimage" style="background-image: url(/img/brands/7.png)"></span></a></div>
+                                  <div class="item-brand"><a href="/brands-details.html"><span class="bgimage" style="background-image: url(/img/brands/8.png)"></span></a></div>
+                                  <div class="item-brand"><a href="/brands-details.html"><span class="bgimage" style="background-image: url(/img/brands/9.png)"></span></a></div>
+                                  <div class="item-brand"><a href="/brands-details.html"><span class="bgimage" style="background-image: url(/img/brands/10.png)"></span></a></div>
+                                  <div class="item-brand"><a href="/brands-details.html"><span class="bgimage" style="background-image: url(/img/brands/11.png)"></span></a></div>
+                                  <div class="item-brand"><a href="/brands-details.html"><span class="bgimage" style="background-image: url(/img/brands/12.png)"></span></a></div>
+                                  <div class="item-brand"><a href="/brands-details.html"><span class="bgimage" style="background-image: url(/img/brands/13.png)"></span></a></div>
+                                  <div class="item-brand"><a href="/brands-details.html"><span class="bgimage" style="background-image: url(/img/brands/14.png)"></span></a></div>
+                                  <div class="item-brand"><a href="/brands-details.html"><span class="bgimage" style="background-image: url(/img/brands/15.png)"></span></a></div>
+                          </div>
+                        </li>
+                        <li><span class="bgimage" style="background-image: url(/img/categories/Vector-4.svg)"></span><a href="/catalog.html">Свободные веса</a>
+                        </li>
+                        <li><span class="bgimage" style="background-image: url(/img/categories/Vector-5.svg)"></span><a href="/catalog.html">Растяжка и инверсия</a>
+                        </li>
+                        <li><span class="bgimage" style="background-image: url(/img/categories/Vector-6.svg)"></span><a href="/catalog.html">Виброплатформы</a>
+                        </li>
+                        <li><span class="bgimage" style="background-image: url(/img/categories/Vector-7.svg)"></span><a href="/catalog.html">Аксессуары</a>
+                        </li>
+                        <li><span class="bgimage" style="background-image: url(/img/categories/Vector-8.svg)"></span><a href="/catalog.html">Шведские стенки</a>
+                        </li>
+                        <li><span class="bgimage" style="background-image: url(/img/categories/Vector-9.svg)"></span><a href="/catalog.html">Все для массажа</a>
+                        </li>
+                        <li><span class="bgimage" style="background-image: url(/img/categories/Vector-10.svg)"></span><a href="/catalog.html">Активный отдых и детское</a>
+                        </li>
+                        <li><span class="bgimage" style="background-image: url(/img/categories/Vector-11.svg)"></span><a href="/catalog.html">Распродажа</a>
+                        </li>
+                        <li><span class="bgimage" style="background-image: url(/img/categories/Vector-12.svg)"></span><a href="/catalog.html">Бренды</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="modal-catalog__subcategory">
+                    <div class="modal-catalog__subitem" data-subitem="subcategory">
+                      <div class="modal-catalog__subitem-title">
+                         Подкатегории <span>(0)</span></div>
+                      <div class="modal-catalog__subitem-main"></div>
+                    </div>
+                    <div class="modal-catalog__subitem" data-subitem="brand">
+                      <div class="modal-catalog__subitem-title">
+                         Бренды <span>(0)</span></div>
+                      <div class="modal-catalog__subitem-main"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+    </footer>
+    <script src="js/main.js?v=1.6"></script>
+    <script src="js/vendor.js"></script>
+  </body>
+</html>

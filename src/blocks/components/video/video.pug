@@ -1,0 +1,21 @@
+mixin video (data)
+  .video(data-id=""+data.link+"")
+    .video__preview
+      +picture(data.preview)
+    .video__action
+      if data.title
+        .video__title= data.title
+      .video__button
+        +icons('#ic_play', 70)
+        span Watch the video
+
+mixin video-review (data)
+  .video(data-id=""+data.link+"")
+    .video__preview
+      +picture(data.preview)
+    .video__action
+      if data.title
+        .video__title= data.title
+      .video__button
+        +icons('#ic_play', 52)
+        span Watch the video review

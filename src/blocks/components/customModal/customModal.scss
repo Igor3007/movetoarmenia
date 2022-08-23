@@ -1,0 +1,115 @@
+/* popup */
+
+@keyframes zoomInUp {
+    from {
+        transform: scale(0.97) translate3d(0, 16px, 0);
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(1) translate3d(0, 0, 0);
+        opacity: 1;
+    }
+}
+
+.af-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.75);
+    overflow-x: auto;
+    z-index: 100;
+
+
+}
+
+.af-popup--mobile {
+    & .af-popup {
+        &__container {
+            @media screen and (max-width: 480px) {
+                padding-bottom: 0;
+                margin-bottom: 0;
+                width: 100%;
+            }
+        }
+
+        // &__close {
+        //     top: 10px;
+        //     right: 5px;
+        //     bottom: 100%;
+
+        //     & svg {
+        //         fill: $main;
+        //         stroke: $main;
+        //     }
+        // }
+    }
+}
+
+.af-popup__bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 101;
+}
+
+.af-popup__wrp {
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    -ms-flex-direction: column;
+    -ms-flex-align: center;
+    -ms-flex-pack: center;
+    z-index: 102;
+    position: relative;
+    min-height: 100%;
+}
+
+.af-popup__content {
+    border-radius: 4px;
+    background: #fff;
+    padding: 10px;
+}
+
+.af-popup__container {
+    width: auto;
+    max-width: 100%;
+    margin: auto;
+    padding: 50px 0;
+    position: relative;
+    animation: 0.2s ease both zoomInUp;
+
+    @media screen and (min-width: $w480) {
+        max-width: 90%;
+    }
+
+}
+
+.af-popup__close {
+    height: 35px;
+    text-align: right;
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+    z-index: 101;
+    top: 50px;
+    height: 35px;
+    background-color: #4ec24e;
+    width: 35px;
+    border-radius: 0px 4px 0px 7px;
+    padding: 5px;
+}
+
+.af-popup__close svg {
+    fill: #fff;
+    width: 24px;
+    height: 24px;
+    stroke: #fff;
+    stroke-width: 2px;
+}

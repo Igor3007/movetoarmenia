@@ -1,0 +1,22 @@
+extends ../layouts/page
+
+include ../../blocks/modules/common/page-404/page-404.pug
+
+
+
+block variables
+  include ../../data/data.pug
+  -
+    title = 'Page not found'
+
+
+block content
+  +page-404
+
+
+block scripts
+  script(src="/js/vendor.js")
+  script(src="/js/common.js")
+
+
+

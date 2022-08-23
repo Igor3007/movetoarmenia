@@ -1,0 +1,33 @@
+.container
+  .header
+    .header-top
+      .header-top__logo
+        a(href='/'): +bgimage('/img/logo.png')
+      .header-top__nav
+        .header-nav(data-menu="container")
+          nav
+            ul
+              each item in app.mainMenu
+                li
+                  a(href=item.href)= item.text
+                  if item.sub
+                    span.sub-arrow
+                    ul
+                      each sub in item.sub
+                        li
+                          a(href=sub.href)= sub.text
+      .header-top__login
+        span.login-icon: +icons('#ic_user', 25)
+        ul
+          li
+            a(href='#') Войти
+          li
+            a(href='#') Регистрация
+              
+
+      .header-top__burger
+        .btn-burger(data-menu="btn")
+          i
+          i
+          i 
+ 

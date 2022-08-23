@@ -1,0 +1,43 @@
+$main: #008FD6;
+$main2: #92919F;
+$main-gray: #E7E6F5;
+$black: #222B32;
+$white: #fff;
+$darkViolet: #161b37;
+$violet: #A83BB1;
+$blue: #367fbd;
+$grayBlue: #86A5C1;
+//$red: #BF3232;
+$pink: #fe3e77;
+$dark: #222B32;
+$gray: #D6D6D6;
+$lgray: #ccc;
+$mgray: #b8b8b8;
+$yellow: #ffd223;
+$green: #4EC24E;
+$red: #cf1c5d;
+$orange: #f98b27;
+
+$lightGray: #f3f3f3;
+
+/* media breakpoints */
+
+$w1660: 1660px;
+$w1440: 1440px;
+$w1376: 1376px;
+$w1200: 1200px;
+$w1100: 1100px;
+$w1024: 1025px;
+$w992: 992px;
+$w760: 767px;
+$w680: 679px;
+$w576: 576px;
+$w480: 480px;
+$w375: 375.98px;
+$w360: 360.98px;
+
+$cubick: transform .3s cubic-bezier(.1, .82, .25, 1),
+opacity .3s cubic-bezier(.1, .82, .25, 1),
+height .3s cubic-bezier(.1, .82, .25, 1);
+
+/*  */
