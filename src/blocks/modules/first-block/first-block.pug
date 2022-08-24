@@ -1,0 +1,32 @@
+mixin first-block
+    section.section-first-block
+       
+            .first-block
+                .first-block__wrp
+                    .first-block__bg
+                        +pictore-no-lazy('/img/common/bg-fb')
+                    .first-block__content
+                        .container
+                            .first-block__title: h1 Найди лучшее для жизни в Армении
+                            .first-block__subtitle Работа, жилье, образование и многое другое
+                            .first-block__filter
+                                +fb-filter
+
+mixin fb-filter
+
+    .fb-filter
+        .fb-filter__wrp
+            form(action='#' method='POST')
+                .fb-filter__list
+                    .fb-filter__item
+                        .fb-filter__label Ежемесячный бюджет
+                        .fb-filter__select: +select(false, ['Не выбрано', '100 000'])
+                    .fb-filter__item
+                        .fb-filter__label Сколько человек планирует переезд?
+                        .fb-filter__select: +select(false, ['1 человек', '2 человека', '3 человека',])
+                    .fb-filter__item
+                        .fb-filter__label Планируете искать работу?
+                        .fb-filter__select: +select(false, ['Не выбрано', 'Да', 'Нет'])
+                    .fb-filter__item
+                        .fb-filter__btn: button.btn Подобрать
+                                    

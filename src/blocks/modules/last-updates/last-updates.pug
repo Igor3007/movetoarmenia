@@ -1,0 +1,28 @@
+mixin last-updates
+    section.section-last-updates
+        .container
+            .section-title Новинки на портале
+            .section-subtitle Самые новые объявления на нашем сайте
+            .section-main
+                .last-updates__list
+                    .last-updates__item: +minicard()
+                    .last-updates__item: +minicard()
+                    .last-updates__item: +minicard()
+            
+mixin minicard
+    .minicard
+        .minicard__wrp
+            .minicard__image: +picture('/img/405b')
+            .minicard__main
+                .minicard__info
+                    .minicard__avatar: +bgimage('/img/medicina.jpg')
+                    .minicard__title   Meghu учебный и развивающий центр 
+                    .minicard__subtitle Добро пожаловать в развивающий центр "Пчелка". В нашем центре квалифицированные специалисты. Имеется…
+                    .minicard__contact
+                        ul
+                            li
+                                +bgimage('/img/svg/ic_pin.svg')
+                                small  52 Yerznkyan Street 
+
+            .minicard__bottom
+                .minicard__lang Язык обучения: Армянский 

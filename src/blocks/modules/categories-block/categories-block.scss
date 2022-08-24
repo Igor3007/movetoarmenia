@@ -1,0 +1,115 @@
+.section-title {
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+    padding-bottom: 1em;
+    line-height: 140%;
+}
+
+.section-subtitle {
+    font-size: 18px;
+    text-align: center;
+    color: #898989;
+    padding-bottom: 2em;
+    line-height: 140%;
+
+    @media screen and (min-width: $w760) {
+        font-size: 23px;
+    }
+}
+
+.section-main {
+    padding-top: 15px;
+}
+
+.categories-block {
+    &__wrp {
+        display: flex;
+        flex-wrap: wrap;
+        margin: -10px;
+    }
+
+    &__item {
+
+        padding: 10px;
+
+        &--w50 {
+            width: 100%;
+
+            @media screen and (min-width: $w760) {
+                width: 50%;
+            }
+        }
+
+        &--w25 {
+            width: 100%;
+
+            @media screen and (min-width: $w760) {
+                width: 50%;
+            }
+
+            @media screen and (min-width: $w1200) {
+                width: 25%;
+            }
+        }
+    }
+}
+
+.card-category {
+
+    position: relative;
+
+    &:hover {
+        & .card-category__overlay {
+            background-color: rgba(36, 36, 41, 0.4);
+        }
+    }
+
+    &__image {
+        & img {
+            height: 220px;
+            width: 100%;
+            object-fit: cover;
+
+            @media screen and (min-width: $w576) {
+                height: 280px;
+            }
+        }
+    }
+
+    &__overlay {
+        @include layer(1);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: 0.3s;
+        background-color: rgba(36, 36, 41, 0.2);
+
+        & a {
+            @include layer(2);
+        }
+    }
+
+    &__title {
+        font-weight: 500;
+        font-size: 18px;
+        color: #fff;
+    }
+
+    &__icon {
+
+        padding-bottom: 10px;
+
+        & .bgimage {
+            width: 60px;
+            height: 60px;
+            @include bgimage-contain;
+        }
+    }
+}
+
+.section-categories-block {
+    border-bottom: 1px solid #eee;
+    padding-bottom: 60px;
+}

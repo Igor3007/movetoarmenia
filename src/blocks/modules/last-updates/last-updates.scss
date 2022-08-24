@@ -1,0 +1,117 @@
+.section-last-updates {
+    @include section-padding;
+}
+
+.section-last-vacancy {
+    @include section-padding;
+}
+
+.section-last-building {
+    @include section-padding;
+}
+
+.section-last-medicine {
+    @include section-padding;
+}
+
+.section-last-education {
+    @include section-padding;
+}
+
+.section-last-consulting {
+    @include section-padding;
+}
+
+.section-last-work {
+    @include section-padding;
+}
+
+.last-updates {
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        margin: -15px;
+    }
+
+    &__item {
+        width: 33.33%;
+        padding: 15px;
+    }
+}
+
+.minicard {
+
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 1px 4px #00000012;
+
+    &__avatar {
+
+        position: relative;
+
+        & .bgimage {
+            width: 60px;
+            height: 60px;
+            overflow: hidden;
+            border-radius: 50%;
+            z-index: 9;
+            background-color: #fff;
+            background-size: cover;
+            background-position: 50%;
+            display: block;
+            margin-top: -25px;
+        }
+    }
+
+    &__avatar {
+        padding-bottom: 15px;
+    }
+
+    &__title {
+        font-weight: 600;
+        padding-bottom: 5px;
+    }
+
+    &__subtitle {
+        color: #7e7e89;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        padding-bottom: 10px;
+    }
+
+    &__main {
+        padding-left: 15px;
+        padding-right: 15px;
+        position: relative;
+        height: 100px;
+
+    }
+
+    &__info {
+        position: absolute;
+    }
+
+    &__lang {
+        text-align: center;
+    }
+
+    &__bottom {
+        padding: 15px 0;
+    }
+
+    &__contact {
+
+
+        & ul {
+            & li {
+                & small {
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+
+
+
+}

@@ -1,6 +1,6 @@
 $background: none;
 $select-color: #fff;
-$select-background: #eeecf2;
+$select-background: #eee;
 $select-width: 100%;
 $select-height: auto;
 
@@ -35,6 +35,7 @@ select {
     color: $select-color;
     width: $select-width;
     min-width: rem(150);
+    border-bottom: 1px solid #ccc;
 
     height: $select-height;
 
@@ -156,6 +157,7 @@ select {
     min-width: 100%;
     width: auto;
     max-height: 300px;
+    border-top: 2px solid $orange;
 
     &.active {
         display: block;
@@ -193,7 +195,7 @@ select {
         transition: all 0.15s ease-in;
         font-size: 14px;
         white-space: nowrap;
-        max-width: 300px;
+
         text-overflow: ellipsis;
         overflow: hidden;
         position: relative;
@@ -210,9 +212,9 @@ select {
 
         &.active,
         &:hover {
-            color: #fff;
-            background: $green;
-            //box-shadow: inset 0px 1px 4px rgba(0, 0, 0, 0.25);
+
+            background-color: #f6f6f6;
+            padding-left: 20px;
         }
 
         &[rel="hide"] {

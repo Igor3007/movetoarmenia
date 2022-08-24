@@ -16,6 +16,10 @@ mixin picture(url)
   picture
     source(srcset=''+url+'.webp' type="image/webp" )
     img(src=''+url+'.jpg' loading='lazy' alt='image')
+mixin pictore-no-lazy(url)
+  picture
+    source(srcset=''+url+'.webp' type="image/webp" )
+    img(src=''+url+'.jpg'  alt='image')
 mixin picturePng(url)
   picture
     source(srcset=''+url+'.webp' type="image/webp" )

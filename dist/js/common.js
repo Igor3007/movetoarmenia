@@ -67,6 +67,23 @@ document.addEventListener("DOMContentLoaded", function (event) {
         })
     })
 
+    /* ==============================================
+    select
+    ============================================== */
+
+    // public methods
+    // select.afSelect.open()
+    // select.afSelect.close()
+    // select.afSelect.update()
+
+    const selectCustom = new customSelect({
+        selector: 'select'
+    })
+
+    selectCustom.init()
+
+
+
 
 
 });

@@ -1,0 +1,24 @@
+.section-image-banner {
+    @include section-padding;
+
+}
+
+.image-banner {
+
+    margin: 0 -20px;
+
+    @media screen and (min-width: $w375) {
+        margin: 0;
+    }
+
+    &__image {
+
+        max-width: 1024px;
+        margin: 0 auto;
+
+        & img {
+            width: 100%;
+            max-width: 100%;
+        }
+    }
+}

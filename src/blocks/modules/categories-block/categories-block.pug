@@ -1,0 +1,60 @@
+- 
+    var cat = [
+        {
+            title: 'Вакансии', 
+            icon: '/img/circle-user-solid.svg',
+            image: '/img/405b',
+            width: 'w50'
+        },
+        {
+            title: 'Новостройки', 
+            icon: '/img/building-solid.svg',
+            image: '/img/novostroiki',
+            width: 'w50'
+        },
+        {
+            title: 'Медицина', 
+            icon:   '/img/house-chimney-medical-solid.svg',
+            image: '/img/medicina',
+            width: 'w25'
+        },
+        {
+            title: 'Консалтинг', 
+            icon:   '/img/user-group-solid.svg',
+            image: '/img/konsalting',
+            width: 'w25'
+        },
+        {
+            title: 'Образование', 
+            icon: '/img/graduation-cap-solid.svg',
+            image: '/img/obrazovanie',
+            width: 'w25'
+        },
+        {
+            title: 'Коворкинги', 
+            icon: '/img/user-gear-solid.svg',
+            image: '/img/coworking-1-768x512',
+            width: 'w25'
+        },
+    ]
+
+mixin categories-block
+    section.section-categories-block
+        .container
+            .section-title Категории
+            .section-subtitle Выберите интересующее вас в наших категориях
+            .section-main
+                .categories-block 
+                    .categories-block__wrp
+                        each item in cat
+                            .categories-block__item(class="categories-block__item--"+item.width): +card-category(item)
+
+mixin card-category(data)
+    .card-category
+        .card-category__image: +picture(data.image)
+        .card-category__overlay
+            a(href='#')
+            .card-category__icon: +bgimage(data.icon)
+            .card-category__title= data.title
+
+                 

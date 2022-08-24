@@ -1,107 +1,20 @@
 .btn {
 
-    padding: 0.8em 2.5em 0.85em 2.5em;
-    background: $green;
+    padding: 0.8em 4.5em 0.85em 4.5em;
+    background: $orange;
     color: #fff;
     border: none;
-    border-radius: 40px;
+    border-radius: 5px;
     cursor: pointer;
 
     display: flex;
     align-items: center;
     justify-content: center;
     min-width: 130px;
-    height: 52px;
+    height: 44px;
     font-weight: 600;
-    box-shadow: 0px 4px 8px rgba(82, 204, 82, 0.3);
-
     white-space: nowrap;
     transition: .3s cubic-bezier(.1, .82, .25, 1);
-
-
-
-
-    // line
-    &.btn-line {
-        background-color: #fff;
-        border: 1px solid #BCBCBC;
-        color: #92919F;
-        height: 39px;
-        font-size: 12px;
-        padding: 0.8em 2.5em 0.75em 2.5em;
-
-        &:hover {
-            background-color: $main;
-            border: 1px solid $main;
-            color: #fff;
-        }
-
-        &--success {
-
-            &.active {
-                background-color: #2FA81A;
-                border: 1px solid #2FA81A;
-                color: #fff;
-
-                &:hover {
-                    background-color: #258115;
-                    border: 1px solid #258115;
-                    color: #fff;
-                }
-            }
-
-
-            height: 39px;
-            font-size: 12px;
-            padding: 0.8em 2.5em 0.75em 2.5em;
-
-
-        }
-
-        &--reject {
-
-            &.active {
-                background-color: #ED1E69;
-                border: 1px solid #ED1E69;
-                color: #fff;
-
-                &:hover {
-                    background-color: #cf1c5d;
-                    border: 1px solid #cf1c5d;
-                    color: #fff;
-                }
-            }
-
-
-            height: 39px;
-            font-size: 12px;
-            padding: 0.8em 2.5em 0.75em 2.5em;
-
-
-        }
-    }
-
-    // line
-    &.btn-line-large {
-        background-color: #fff;
-        border: 1px solid #BCBCBC;
-        color: #92919F;
-        font-size: 12px;
-        padding: 0.8em 2.5em 0.75em 2.5em;
-
-        &:hover {
-            background-color: $main;
-            border: 1px solid $main;
-            color: #fff;
-        }
-
-
-    }
-
-
-
-
-
 
     &:hover {
         opacity: 0.9;
