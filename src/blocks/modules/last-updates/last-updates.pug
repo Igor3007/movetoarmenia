@@ -4,15 +4,23 @@ mixin last-updates
             .section-title Новинки на портале
             .section-subtitle Самые новые объявления на нашем сайте
             .section-main
-                .last-updates__list
-                    .last-updates__item: +minicard()
-                    .last-updates__item: +minicard()
-                    .last-updates__item: +minicard()
+                .section-main__list
+                    .section-main__item: +minicard()
+                    .section-main__item: +minicard()
+                    .section-main__item: +minicard()
             
 mixin minicard
     .minicard
         .minicard__wrp
-            .minicard__image: +picture('/img/405b')
+            .minicard__image
+                a(href='/detail.html')
+                +picture('/img/405b')
+
+                .minicard__tags
+                    ul
+                        li  ֏֏֏ - высокая 
+                        li  ֏֏ - средняя
+
             .minicard__main
                 .minicard__info
                     .minicard__avatar: +bgimage('/img/medicina.jpg')
@@ -25,4 +33,4 @@ mixin minicard
                                 small  52 Yerznkyan Street 
 
             .minicard__bottom
-                .minicard__lang Язык обучения: Армянский 
+                .minicard__text Язык обучения: Армянский 

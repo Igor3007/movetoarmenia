@@ -1,0 +1,75 @@
+.section-page-contacts {
+    @include section-padding;
+}
+
+.page-contacts {
+    &__top {}
+
+    &__item {
+        padding-bottom: 50px;
+
+        @media screen and (min-width: $w760) {
+            padding: 15px;
+        }
+
+        @media screen and (min-width: $w992) {
+            width: 33.33%;
+        }
+    }
+
+    &__list {
+        @media screen and (min-width: $w760) {
+            display: flex;
+            flex-wrap: wrap;
+            margin: -15px;
+        }
+
+
+    }
+
+    &__map {
+        margin-top: 40px;
+        background-color: #fff;
+    }
+}
+
+.card-contacts {
+
+    display: flex;
+
+    @media screen and (min-width: $w992) {
+        flex-direction: column;
+    }
+
+    &__title {
+        font-size: 16px;
+        padding-bottom: 20px;
+        width: 100px;
+        min-width: 100px;
+        line-height: 150%;
+
+        @media screen and (min-width: $w992) {
+            width: auto;
+            padding-bottom: 30px;
+        }
+    }
+
+    &__link {
+        & a {
+            font-size: 16px;
+            font-weight: bold;
+            display: block;
+            margin-bottom: 15px;
+            line-height: 150%;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    &__list {
+        max-width: 1080px;
+        margin: 0 auto;
+    }
+}

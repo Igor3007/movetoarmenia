@@ -1,7 +1,12 @@
+include ../../modules/last-updates/last-updates.pug
+
 mixin last-education
     section.section-last-education
         .container
             .section-title Образование
             .section-subtitle Детские сады, школы и университеты Армении
-            .section-sumain
-                .last-education last-education
+            .section-main
+                .section-main__list
+                    .section-main__item: +minicard()
+                    .section-main__item: +minicard()
+                    .section-main__item: +minicard()

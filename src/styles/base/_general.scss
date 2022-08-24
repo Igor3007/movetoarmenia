@@ -278,10 +278,12 @@ input[type="date"] {
             padding-left: 20px;
             font-size: 14px;
             padding-bottom: 20px;
+            color: #666;
 
             @media screen and (min-width: $w760) {
                 font-size: 16px;
                 padding-left: 30px;
+                line-height: 140%;
             }
 
             &:last-child {
@@ -297,7 +299,7 @@ input[type="date"] {
                 left: 0;
                 top: 0.5em;
                 border-radius: 50%;
-                background-color: $main;
+                background-color: $orange;
             }
         }
     }

@@ -26,7 +26,7 @@
     @include section-padding;
 }
 
-.last-updates {
+.section-main {
     &__list {
         display: flex;
         flex-wrap: wrap;
@@ -44,6 +44,42 @@
     border-radius: 5px;
     overflow: hidden;
     box-shadow: 0 1px 4px #00000012;
+
+    &:hover {
+        & .minicard {
+            &__image {
+                & a {
+                    background-color: rgba($color: #000000, $alpha: 0.4);
+                }
+            }
+        }
+    }
+
+
+    &__image {
+
+        position: relative;
+
+        & a {
+            @include layer(2);
+            background-color: rgba($color: #000000, $alpha: 0.3);
+            transition: 0.3s;
+        }
+
+        & picture {
+            padding-top: 50%;
+            position: relative;
+            display: block;
+
+            & img {
+                @include layer(1);
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+
 
     &__avatar {
 
@@ -78,36 +114,98 @@
         overflow: hidden;
         text-overflow: ellipsis;
         padding-bottom: 10px;
+        width: 100%;
     }
 
     &__main {
-        padding-left: 15px;
-        padding-right: 15px;
+
         position: relative;
         height: 100px;
+        background-color: #fff;
+        z-index: 3;
 
+        &:hover {
+
+
+            & .minicard__info {
+                top: calc(-40%);
+
+            }
+
+        }
     }
 
     &__info {
         position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        background-color: #fff;
+        padding-left: 15px;
+        padding-right: 15px;
+        transition: 0.3s;
+
+
+
     }
 
-    &__lang {
+    &__text {
         text-align: center;
     }
 
     &__bottom {
         padding: 15px 0;
+        background-color: #fff;
+        position: relative;
+        z-index: 4;
     }
 
     &__contact {
 
 
         & ul {
+
+            display: flex;
+            flex-wrap: wrap;
+            margin: -5px;
+
             & li {
+
+                display: flex;
+                align-items: center;
+                padding: 5px;
+
                 & small {
                     font-size: 13px;
+                    margin-left: 10px;
                 }
+
+                & .bgimage {
+                    width: 18px;
+                    height: 18px;
+                    @include bgimage-contain;
+                }
+            }
+        }
+    }
+
+    &__tags {
+        position: absolute;
+        left: 10px;
+        top: 10px;
+        z-index: 5;
+
+        & ul {
+            display: flex;
+            color: #fff;
+            margin: -3px;
+
+            & li {
+                padding: 5px 10px;
+                border: 1.5px solid hsla(0, 0%, 100%, .3);
+                border-radius: 4px;
+                margin: 3px;
+                font-size: 13px;
             }
         }
     }

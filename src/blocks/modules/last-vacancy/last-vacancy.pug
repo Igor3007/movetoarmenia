@@ -1,7 +1,12 @@
+include ../../modules/last-updates/last-updates.pug
+
 mixin last-vacancy
     section.section-last-vacancy
         .container
             .section-title Вакансии
             .section-subtitle Поиск работы еще не был так прост
             .section-main
-                .last-vacancy last-vacancy
+                .section-main__list
+                    .section-main__item: +minicard()
+                    .section-main__item: +minicard()
+                    .section-main__item: +minicard()

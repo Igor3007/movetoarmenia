@@ -1,0 +1,42 @@
+-
+    var contacts = [
+        {
+            title: 'Адресса:',
+            link: [
+                {text: 'Москва, ул. Малая Бронная', href: '#'},
+                {text: 'Москва, ул. Миусская', href: '#'},
+            ]
+        },
+        {
+            title: 'Телефон:',
+            link: [
+                {text: '+7 (495) 555-15-22', href: 'tel:+7 (495) 555-15-22'},
+                {text: '+7 (495) 999-15-22', href: 'tel:+7 (495) 999-15-22'},
+            ]
+        },
+        {
+            title: 'Почта:',
+            link: [
+                {text: 'move2armenia@gmail.ru', href: 'milto:move2armenia@gmail.ru'},
+                {text: 'movetoarmenia@gmail.ru', href: 'milto:movetoarmenia@gmail.ru'},
+            ]
+        },
+    ]
+
+mixin page-contacts
+    section.section-page-contacts
+        .page-contacts
+            .container
+                .page-contacts__list
+                    each item in contacts
+                        .page-contacts__item: +card-contacts(item)
+                 
+
+
+mixin card-contacts(data)
+    .card-contacts
+        .card-contacts__title= data.title
+        .card-contacts__link
+            each item in data.link
+                a(href=item.href)= item.text
+        

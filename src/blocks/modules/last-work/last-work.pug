@@ -1,7 +1,12 @@
+include ../../modules/last-updates/last-updates.pug
+
 mixin last-work
     section.section-last-work
         .container
             .section-title Рабочие места
             .section-subtitle Коворкинг и другие места для работы
-            .sectimain
-                .last-work last-work
+            .section-main
+                .section-main__list
+                    .section-main__item: +minicard()
+                    .section-main__item: +minicard()
+                    .section-main__item: +minicard()

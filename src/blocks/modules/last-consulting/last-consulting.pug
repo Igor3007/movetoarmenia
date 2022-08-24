@@ -1,7 +1,12 @@
+include ../../modules/last-updates/last-updates.pug
+
 mixin last-consulting
     section.section-last-consulting
         .container
             .section-title Консалтинг
             .section-subtitle Юридическая и бухгалтерская консультация 
-            .section-submain
-                .last-consulting last-consulting
+            .section-main
+                .section-main__list
+                    .section-main__item: +minicard()
+                    .section-main__item: +minicard()
+                    .section-main__item: +minicard()

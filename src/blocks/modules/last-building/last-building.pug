@@ -1,7 +1,13 @@
+include ../../modules/last-updates/last-updates.pug
+
+
 mixin last-building
     section.section-last-building
         .container
             .section-title Новостройки
             .section-subtitle Квартиры и дома в Армении
-            .section-smain
-                .last-building last-building
+            .section-main
+                .section-main__list
+                    .section-main__item: +minicard()
+                    .section-main__item: +minicard()
+                    .section-main__item: +minicard()
