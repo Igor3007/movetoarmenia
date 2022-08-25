@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 /* media breakpoints */
 
 /*  */
@@ -3401,6 +3403,13 @@ header .container {
   padding-top: 15px;
 }
 
+.section-more {
+  padding-top: 40px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
 .categories-block__wrp {
   display: flex;
   flex-wrap: wrap;
@@ -3517,7 +3526,7 @@ header .container {
 }
 
 .section-main__item {
-  width: 33.33%;
+  width: 100%;
   padding: 15px;
 }
 
@@ -3528,21 +3537,21 @@ header .container {
 }
 
 .minicard:hover .minicard__image a {
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .minicard__image {
   position: relative;
 }
 
-.minicard__image a {
+.minicard__image > a {
   position: absolute;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
   z-index: 2;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.4);
   transition: 0.3s;
 }
 
@@ -3564,6 +3573,33 @@ header .container {
   object-fit: cover;
 }
 
+.minicard__inimage {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 5;
+  padding: 0 15px 5px 15px;
+}
+
+.minicard__inimage .minicard__subtitle,
+.minicard__inimage .minicard__title {
+  color: #fff;
+  font-size: 13px;
+}
+
+.minicard__inimage .minicard__subtitle a,
+.minicard__inimage .minicard__title a {
+  color: #fff;
+  position: relative;
+  background-color: transparent !important;
+}
+
+.minicard__inimage .minicard__subtitle a:hover,
+.minicard__inimage .minicard__title a:hover {
+  text-decoration: underline;
+}
+
 .minicard__avatar {
   position: relative;
 }
@@ -3574,7 +3610,7 @@ header .container {
   overflow: hidden;
   border-radius: 50%;
   z-index: 9;
-  background-color: #fff;
+  background-color: #eee;
   background-size: cover;
   background-position: 50%;
   display: block;
@@ -3607,22 +3643,28 @@ header .container {
 }
 
 .minicard__main:hover .minicard__info {
-  top: calc(-40%);
+  transform: translateY(0);
 }
 
 .minicard__info {
   position: absolute;
-  top: 0;
+  bottom: 0;
   left: 0;
   right: 0;
   background-color: #fff;
   padding-left: 15px;
   padding-right: 15px;
   transition: 0.3s;
+  transform: translateY(calc(100% - 100px));
 }
 
 .minicard__text {
   text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
+  padding: 0 15px;
 }
 
 .minicard__bottom {
@@ -3630,6 +3672,11 @@ header .container {
   background-color: #fff;
   position: relative;
   z-index: 4;
+  border-top: 1px solid #eee;
+}
+
+.minicard__contact {
+  padding-bottom: 10px;
 }
 
 .minicard__contact ul {
@@ -3678,6 +3725,200 @@ header .container {
   border-radius: 4px;
   margin: 3px;
   font-size: 13px;
+}
+
+.minicard__doc {
+  display: flex;
+  padding: 0 20px;
+  align-items: center;
+}
+
+.minicard__doc-count {
+  margin-left: 15px;
+}
+
+.minicard__doc-count span {
+  min-width: 30px;
+  height: 30px;
+  background-color: #eee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+  padding: 0 7px;
+}
+
+.minicard__doc-name {
+  margin-left: 10px;
+}
+
+.minicard__doc-icon .bgimage {
+  width: 30px;
+  height: 30px;
+  overflow: hidden;
+  border-radius: 50%;
+  background-size: 18px auto;
+  background-position: center;
+  display: block;
+  background-color: #f98b27;
+  background-repeat: no-repeat;
+}
+
+.block-icon {
+  padding: 0 20px;
+}
+
+.block-icon ul {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  margin: -3px;
+}
+
+.block-icon ul li {
+  flex-basis: 70px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3px;
+}
+
+.block-icon ul li .bgimage {
+  width: 20px;
+  height: 20px;
+  position: relative;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.block-icon ul li small {
+  font-size: 13px;
+  display: block;
+  text-align: center;
+}
+
+.card-vacancy {
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 1px 4px #00000012;
+  padding: 20px;
+}
+
+.card-vacancy__content {
+  display: flex;
+  padding-bottom: 25px;
+}
+
+.card-vacancy__image .bgimage {
+  width: 45px;
+  height: 45px;
+  position: relative;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: block;
+  display: block;
+  border-radius: 50%;
+  background-color: #eee;
+}
+
+.card-vacancy__desc {
+  padding-left: 15px;
+}
+
+.card-vacancy__name {
+  margin-bottom: 5px;
+}
+
+.card-vacancy__name a {
+  font-weight: 600;
+}
+
+.card-vacancy__name a:hover {
+  text-decoration: underline;
+}
+
+.card-vacancy__prop ul {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -3px -5px;
+}
+
+.card-vacancy__prop ul li {
+  padding: 3px 5px;
+  font-size: 13px;
+}
+
+.card-vacancy__prop ul li::before {
+  content: '•';
+  margin-right: 5px;
+  font-weight: 600;
+}
+
+.card-vacancy__company {
+  padding: 15px 20px 0 20px;
+  margin: 0 -20px -5px -20px;
+  border-top: 1px solid #ededed;
+  display: flex;
+  align-items: center;
+}
+
+.card-vacancy__company-logo {
+  margin-right: 10px;
+}
+
+.card-vacancy__company-logo .bgimage {
+  width: 32px;
+  height: 32px;
+  position: relative;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: block;
+  display: block;
+  border-radius: 50%;
+  background-color: #eee;
+}
+
+.card-vacancy__company-name {
+  font-weight: 600;
+  margin-right: auto;
+}
+
+.card-vacancy__company-name a:hover {
+  text-decoration: underline;
+}
+
+.card-vacancy__company-bookmark {
+  margin-left: 5px;
+}
+
+.card-vacancy__company .ic-vacancy-heart,
+.card-vacancy__company .ic-vacancy-loupe {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: #eee;
+  display: block;
+  background-size: 16px auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: 0.3s;
+}
+
+.card-vacancy__company .ic-vacancy-heart:hover,
+.card-vacancy__company .ic-vacancy-loupe:hover {
+  cursor: pointer;
+  background-color: #ddd;
+}
+
+.section-last-building .minicard__image picture {
+  padding-top: 65%;
 }
 
 .section-page-contacts {
@@ -3900,6 +4141,11 @@ header .container {
     width: 50%;
   }
 
+  .section-main__item {
+    width: 50%;
+    padding: 15px;
+  }
+
   .page-contacts__item {
     padding: 15px;
   }
@@ -3940,6 +4186,11 @@ header .container {
   .header-nav nav ul > li > ul li a {
     text-align: left;
     justify-content: flex-start;
+  }
+
+  .section-main__item {
+    width: 33.33%;
+    padding: 15px;
   }
 
   .page-contacts__item {

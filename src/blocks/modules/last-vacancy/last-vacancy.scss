@@ -1,0 +1,116 @@
+.card-vacancy {
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 1px 4px #00000012;
+    padding: 20px;
+
+    &__content {
+        display: flex;
+        padding-bottom: 25px;
+    }
+
+    &__image {
+        & .bgimage {
+            width: 45px;
+            height: 45px;
+            @include bgimage-contain;
+            display: block;
+            border-radius: 50%;
+            background-color: #eee;
+        }
+    }
+
+    &__desc {
+        padding-left: 15px;
+    }
+
+    &__name {
+
+        margin-bottom: 5px;
+
+        & a {
+            font-weight: 600;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+
+    &__prop {
+        & ul {
+            display: flex;
+            flex-wrap: wrap;
+            margin: -3px -5px;
+
+            & li {
+                padding: 3px 5px;
+                font-size: 13px;
+
+                &::before {
+                    content: '•';
+                    margin-right: 5px;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+
+    &__company {
+        padding: 15px 20px 0 20px;
+        margin: 0 -20px -5px -20px;
+        border-top: 1px solid #ededed;
+
+        display: flex;
+        align-items: center;
+
+        &-logo {
+
+            margin-right: 10px;
+
+            & .bgimage {
+                width: 32px;
+                height: 32px;
+                @include bgimage-contain;
+                display: block;
+                border-radius: 50%;
+                background-color: #eee;
+            }
+        }
+
+        &-name {
+            font-weight: 600;
+            margin-right: auto;
+
+
+            & a {
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+
+        &-bookmark {
+            margin-left: 5px;
+        }
+
+        & .ic-vacancy-heart,
+        & .ic-vacancy-loupe {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            background-color: #eee;
+            display: block;
+
+            background-size: 16px auto;
+            background-repeat: no-repeat;
+            background-position: center;
+            transition: 0.3s;
+
+            &:hover {
+                cursor: pointer;
+                background-color: #ddd;
+            }
+        }
+    }
+}

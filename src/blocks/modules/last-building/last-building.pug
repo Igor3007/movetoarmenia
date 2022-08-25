@@ -1,6 +1,3 @@
-include ../../modules/last-updates/last-updates.pug
-
-
 mixin last-building
     section.section-last-building
         .container
@@ -8,6 +5,49 @@ mixin last-building
             .section-subtitle Квартиры и дома в Армении
             .section-main
                 .section-main__list
-                    .section-main__item: +minicard()
-                    .section-main__item: +minicard()
-                    .section-main__item: +minicard()
+                    .section-main__item: +minicard2()
+                    .section-main__item: +minicard2()
+                    .section-main__item: +minicard2()
+            .section-more
+                a(href='https://movetoarmenia.fvds.ru/katalog/?type=rabota-vakansii-2&sort=latest'): button.btn Все новостройки
+
+
+ 
+
+
+mixin minicard2
+    .minicard
+        .minicard__wrp
+            .minicard__image
+                a(href='/detail.html')
+                +picture('/img/405b')
+
+                .minicard__tags
+                    ul
+                        li  Срок сдачи: 1 квартала 2024
+
+                .minicard__inimage
+                    .minicard__title: a(href='#') Arcadia Construction Armenia
+                    .minicard__subtitle 136/1 Verin Antarain
+
+             
+                           
+
+            .minicard__bottom
+                .minicard__blockicon
+                    .block-icon
+                        ul
+                            li  
+                                +bgimage('/img/svg/ic_usd.svg')
+                                small от 1380 м2  
+                            li  
+                                +bgimage('/img/svg/ic_build.svg')
+                                small Монолитный 
+                            li  
+                                +bgimage('/img/svg/ic_sort.svg')
+                                small 12 этаж. 
+                            
+                        
+
+
+                

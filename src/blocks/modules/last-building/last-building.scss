@@ -1,0 +1,9 @@
+.section-last-building {
+    & .minicard {
+        &__image {
+            & picture {
+                padding-top: 65%;
+            }
+        }
+    }
+}

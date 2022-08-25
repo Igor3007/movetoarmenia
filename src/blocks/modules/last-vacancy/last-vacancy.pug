@@ -7,6 +7,30 @@ mixin last-vacancy
             .section-subtitle Поиск работы еще не был так прост
             .section-main
                 .section-main__list
-                    .section-main__item: +minicard()
-                    .section-main__item: +minicard()
-                    .section-main__item: +minicard()
+                    .section-main__item: +card-vacancy()
+                    .section-main__item: +card-vacancy()
+                    .section-main__item: +card-vacancy()
+
+
+mixin card-vacancy
+    .card-vacancy
+        .card-vacancy__wrp
+            .card-vacancy__content
+                .card-vacancy__image
+                    +bgimage('/img/common/')
+                .card-vacancy__desc
+                    .card-vacancy__name: a(href='#') IOS Developer
+                    .card-vacancy__prop
+                        ul
+                            li Разработка ПО
+                            li От 3 до 6 лет опыта
+                            li Полный день 
+            .card-vacancy__company
+                .card-vacancy__company-logo: +bgimage('/img/common/')
+                .card-vacancy__company-name: a(href='#') ADDEVICE
+                .card-vacancy__company-view
+                    span.ic-vacancy-loupe(style="background-image: url('/img/svg/ic_loupe.svg')")
+                .card-vacancy__company-bookmark
+                    span.ic-vacancy-heart(style="background-image: url('/img/svg/ic_heart.svg')")
+
+            

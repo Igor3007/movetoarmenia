@@ -7,6 +7,43 @@ mixin last-consulting
             .section-subtitle Юридическая и бухгалтерская консультация 
             .section-main
                 .section-main__list
-                    .section-main__item: +minicard()
-                    .section-main__item: +minicard()
-                    .section-main__item: +minicard()
+                    .section-main__item: +minicard-c()
+                    .section-main__item: +minicard-c()
+                    .section-main__item: +minicard-c()
+
+mixin minicard-c
+    .minicard
+        .minicard__wrp
+            .minicard__image
+                a(href='/detail.html')
+                +picture('/img/405b')
+
+                .minicard__tags
+                    ul
+                        li  ֏֏֏ - высокая 
+                        li  Физ.лица
+
+            .minicard__main
+                .minicard__info
+                    .minicard__avatar: +bgimage('/img/medicina.jpg')
+                    .minicard__title    Forza Business
+                    .minicard__subtitle Наша команда гарантирует решения широкого спектра задач с детальной оценкой потенциальных рисков и…
+                    .minicard__contact
+                        ul
+                            li
+                                +bgimage('/img/svg/ic_pin.svg')
+                                small  52 Yerznkyan Street 
+                           
+
+            .minicard__bottom
+                .block-icon
+                        ul
+                            li  
+                                +bgimage('/img/svg/ic_view-week.svg')
+                                small  5 Ter-Grigoryan Street 
+                           
+
+
+
+ 
+

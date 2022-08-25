@@ -7,7 +7,42 @@ mixin last-medicine
             .section-subtitle Все медицинские учреждения Армении в одном месте
             .section-main
                 .section-main__list
-                    .section-main__item: +minicard()
-                    .section-main__item: +minicard()
-                    .section-main__item: +minicard()
- 
+                    .section-main__item: +minicard3()
+                    .section-main__item: +minicard3()
+                    .section-main__item: +minicard3()
+
+mixin minicard3
+    .minicard
+        .minicard__wrp
+            .minicard__image
+                a(href='/detail.html')
+                +picture('/img/405b')
+
+                .minicard__tags
+                    ul
+                        li  ֏֏֏ - высокая 
+                        li  ★★★★★
+
+
+            .minicard__main
+                .minicard__info
+                    .minicard__avatar: +bgimage('/img/medicina.jpg')
+                    .minicard__title   Медицинский центр уходу за руками и ногами "ПОДО КЛИНИК"
+                    .minicard__subtitle Частная
+                    .minicard__contact
+                        ul
+                            li
+                                +bgimage('/img/svg/ic_phone.svg')
+                                small  +374 60 440 944 
+                            li
+                                +bgimage('/img/svg/ic_pin.svg')
+                                small 1 Derenik Demirtchyan Street 
+                           
+
+            .minicard__bottom
+                .minicard__doc
+                    .minicard__doc-icon: +bgimage('/img/svg/ic_bookmark.svg')
+                    .minicard__doc-name Дерматолог 
+                    .minicard__doc-count: span +4
+                    
+

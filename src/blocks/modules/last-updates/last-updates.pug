@@ -5,9 +5,9 @@ mixin last-updates
             .section-subtitle Самые новые объявления на нашем сайте
             .section-main
                 .section-main__list
-                    .section-main__item: +minicard()
-                    .section-main__item: +minicard()
-                    .section-main__item: +minicard()
+                    .section-main__item: +minicard-no-desc()
+                    .section-main__item: +minicard-no-desc()
+                    .section-main__item: +minicard-no-desc()
             
 mixin minicard
     .minicard
@@ -31,6 +31,37 @@ mixin minicard
                             li
                                 +bgimage('/img/svg/ic_pin.svg')
                                 small  52 Yerznkyan Street 
+                           
 
             .minicard__bottom
                 .minicard__text Язык обучения: Армянский 
+
+
+mixin minicard-no-desc
+    .minicard
+        .minicard__wrp
+            .minicard__image
+                a(href='/detail.html')
+                +picture('/img/405b')
+
+                .minicard__tags
+                    ul
+                        li  ֏֏֏ - высокая 
+                        li  ֏֏ - средняя
+
+            .minicard__main
+                .minicard__info
+                    .minicard__avatar: +bgimage('/img/common/geo.jpg')
+                    .minicard__title Armenian Geographic  
+                    .minicard__subtitle Добро пожаловать в развивающий центр "Пчелка". В нашем центре квалифицированные специалисты. Имеется…
+                    .minicard__contact
+                        ul
+                            li
+                                +bgimage('/img/svg/ic_pin.svg')
+                                small  52 Yerznkyan Street 
+                    
+
+            .minicard__bottom
+                .minicard__text Пеший туризм / Hiking, Эксурсии / Tourism, Экстрим / Extreme
+
+

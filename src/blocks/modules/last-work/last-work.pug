@@ -7,6 +7,44 @@ mixin last-work
             .section-subtitle Коворкинг и другие места для работы
             .section-main
                 .section-main__list
-                    .section-main__item: +minicard()
-                    .section-main__item: +minicard()
-                    .section-main__item: +minicard()
+                    .section-main__item: +minicard-w()
+                    .section-main__item: +minicard-w()
+                    .section-main__item: +minicard-w()
+
+
+      
+mixin minicard-w
+    .minicard
+        .minicard__wrp
+            .minicard__image
+                a(href='/detail.html')
+                +picture('/img/405b')
+
+                .minicard__tags
+                    ul
+                        li  ֏֏֏ - высокая 
+                        li  ★★★★★
+
+            .minicard__main
+                .minicard__info
+                    .minicard__avatar: +bgimage('/img/medicina.jpg')
+                    .minicard__title: a(href='#')  Corner. Cafe and Coworking
+                    .minicard__subtitle Уютное кафе и удобный коворкинг в Гюмри
+                    .minicard__contact
+                        ul
+                            li
+                                +bgimage('/img/svg/ic_pin.svg')
+                                small  11/2 Smbat Zoravar Street 
+                           
+
+            
+            .minicard__bottom
+                .minicard__blockicon
+                    .block-icon
+                        ul
+                            li  
+                                +bgimage('/img/svg/ic_map-marker.svg')
+                                small Кентрон 
+                            li  
+                                +bgimage('/img/svg/ic_database.svg')
+                                small 5500
