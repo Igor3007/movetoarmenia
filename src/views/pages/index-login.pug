@@ -1,0 +1,43 @@
+extends ../layouts/index-login
+
+ 
+
+block variables
+  include ../../data/data.pug
+  - const title = "movetoarmenia"
+
+
+block content
+
+  include ../../blocks/modules/first-block/first-block.pug
+  include ../../blocks/modules/image-banner/image-banner.pug
+  include ../../blocks/modules/categories-block/categories-block.pug
+
+  include ../../blocks/modules/last-updates/last-updates.pug
+  include ../../blocks/modules/last-vacancy/last-vacancy.pug
+  include ../../blocks/modules/last-building/last-building.pug
+  include ../../blocks/modules/last-work/last-work.pug
+  include ../../blocks/modules/last-medicine/last-medicine.pug
+  include ../../blocks/modules/last-education/last-education.pug
+  include ../../blocks/modules/last-consulting/last-consulting.pug
+
+  +first-block()
+  +image-banner()
+  +categories-block() 
+
+  +last-updates()
+  +last-vacancy()
+  +last-building()
+  +last-medicine()
+  +last-education()
+  +last-consulting()
+  +last-work()
+
+  
+
+
+
+
+block scripts
+  script(src="/js/vendor.js") 
+  script(src="/js/common.js") 

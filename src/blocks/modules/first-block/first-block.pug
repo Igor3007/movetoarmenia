@@ -37,7 +37,30 @@ mixin fb-filter
                         .fb-filter__select: +select(false, ['Не выбрано', '100 000'])
                     .fb-filter__item
                         .fb-filter__label Сколько человек планирует переезд?
-                        .fb-filter__select: +select(false, ['1 человек', '2 человека', '3 человека',])
+                        .fb-filter__select
+                            .filter-counter
+                                .filter-counter__total 0
+                                .filter-counter__dropdown
+                                    .filter-counter__item
+                                        .filter-counter__item-title
+                                            strong Взрослые
+                                            span Старше 12
+                                        .filter-counter__item-input
+                                            .filter-counter__number
+                                                .filter-counter__number-dec -
+                                                .filter-counter__number-input: input(type="text" disabled value="0")
+                                                .filter-counter__number-inc +
+                                    .filter-counter__item
+                                        .filter-counter__item-title
+                                            strong Дети
+                                            span От 2 до 12 лет
+                                        .filter-counter__item-input
+                                            .filter-counter__number
+                                                .filter-counter__number-dec -
+                                                .filter-counter__number-input: input(type="text" disabled value="0")
+                                                .filter-counter__number-inc +
+                                         
+                                    .filter-counter__item
                     .fb-filter__item
                         .fb-filter__label Планируете искать работу?
                         .fb-filter__select: +select(false, ['Не выбрано', 'Да', 'Нет'])

@@ -28,11 +28,28 @@
             & li {
                 padding: 8px;
                 font-size: 16px;
+
+                display: flex;
+                align-items: center;
+
+                & .bgimage {
+                    width: 18px;
+                    height: 18px;
+                    @include bgimage-contain;
+                    margin-right: 10px;
+
+                }
             }
         }
     }
 
     &__back {
         margin-top: 60px;
+    }
+
+    &__image {
+        & img {
+            width: 100%;
+        }
     }
 }

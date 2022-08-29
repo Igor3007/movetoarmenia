@@ -1,0 +1,56 @@
+.container
+  .header
+    .header-top
+      .header-top__logo
+        a(href='/'): +bgimage('/img/logo.png')
+      .header-top__nav
+        .header-nav(data-menu="container")
+          nav
+            ul
+              each item in app.mainMenu
+                li
+                  a(href=item.href)= item.text
+                  if item.sub
+                    span.sub-arrow
+                    ul
+                      each sub in item.sub
+                        li
+                          a(href=sub.href)= sub.text
+      .header-top__login
+        .user-menu
+          .user-menu__avatar: +bgimage('/img/konsalting.jpg')
+          .user-menu__name 
+            a(href='#') demoam
+            .sub-arrow
+          .user-menu__list
+            ul
+              li
+                +bgimage('/img/svg/laptop-solid.svg') 
+                a(href='#') Dashboard
+              li
+                +bgimage('/img/svg/format-list-bulleted.svg') 
+                a(href='#') My Listings
+              li
+                +bgimage('/img/svg/flash-outline.svg') 
+                a(href='#') Promotions
+              li
+                +bgimage('/img/svg/bookmark-outline.svg') 
+                a(href='#') Bookmarks
+              li
+                +bgimage('/img/svg/cog-box.svg') 
+                a(href='#') Account details
+              li
+                +bgimage('/img/svg/lock-outline.svg') 
+                a(href='#') Logout
+
+              
+
+      .header-top__burger
+        .btn-burger(data-menu="btn")
+          i
+          i
+          i 
+ 
+
+
+

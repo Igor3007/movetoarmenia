@@ -82,6 +82,100 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
     selectCustom.init()
 
+    /* ==============================================
+    login menu
+    ============================================== */
+
+    if (document.querySelectorAll('.login-icon').length) {
+        document.querySelectorAll('.login-icon').forEach(item => {
+            item.addEventListener('click', e => {
+                if (e.target.closest('.header-top__login')) {
+                    e.target.closest('.header-top__login').classList.toggle('open')
+                    e.stopPropagation()
+                }
+
+            })
+        })
+
+        document.addEventListener('click', e => {
+            if (document.querySelector('.header-top__login')) {
+                document.querySelector('.header-top__login').classList.remove('open')
+            }
+        })
+    }
+
+    /* ==============================================
+    login menu
+    ============================================== */
+    if (document.querySelector('.filter-counter')) {
+
+        function totalSumm() {
+            let summ = Number(0)
+
+            document.querySelectorAll('.filter-counter__number input').forEach(item => {
+                summ += Number(item.value)
+            })
+
+            document.querySelector('.filter-counter__total').innerText = summ
+        }
+
+        document.querySelector('.filter-counter').addEventListener('click', e => {
+            e.stopPropagation()
+
+            if (!e.target.closest('.filter-counter__item')) {
+                e.target.closest('.filter-counter').classList.toggle('active')
+            }
+
+        })
+
+        let incButton = document.querySelectorAll('.filter-counter__number-inc')
+        let decButton = document.querySelectorAll('.filter-counter__number-dec')
+
+        incButton.forEach(item => {
+            item.addEventListener('click', e => {
+                let parentElement = e.target.closest('.filter-counter__number')
+                let inputElement = parentElement.querySelector('input')
+
+                if (inputElement.value >= 0) {
+                    inputElement.value = Number(inputElement.value) + 1
+                }
+
+                totalSumm()
+            })
+        })
+
+        decButton.forEach(item => {
+            item.addEventListener('click', e => {
+                let parentElement = e.target.closest('.filter-counter__number')
+                let inputElement = parentElement.querySelector('input')
+
+                if (inputElement.value > 0) {
+                    inputElement.value = Number(inputElement.value) - 1
+                }
+
+                totalSumm()
+            })
+        })
+
+        //out click
+
+        document.addEventListener('click', e => {
+            if (document.querySelector('.filter-counter')) {
+                document.querySelector('.filter-counter').classList.remove('active')
+            }
+        })
+
+
+
+    }
+
+
+
+
+
+
+
+
 
 
 

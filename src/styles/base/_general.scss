@@ -96,7 +96,7 @@ input[type="date"] {
 
 
 .container {
-    max-width: 360px;
+    max-width: 375px;
     width: 100%;
     margin: 0 auto;
     padding: 0 16px;
@@ -104,7 +104,7 @@ input[type="date"] {
 
     @media screen and (min-width: $w480) {
         padding: 0 16px;
-        max-width: 360px;
+        max-width: 400px;
     }
 
     @media screen and (min-width: $w576) {
