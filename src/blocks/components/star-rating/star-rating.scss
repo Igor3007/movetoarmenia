@@ -1,65 +1,69 @@
+/* star-rating-start */
 
 .star-rating {
-	overflow: hidden;
+    overflow: hidden;
     margin: 0 auto;
-    display: flex; 
+    display: flex;
 
-    & :not(:checked) > input {
+    & :not(:checked)>input {
         display: none;
     }
 
     & label {
 
-        padding-right: rem(5);
+        padding-right: rem(3);
         cursor: pointer;
 
-        &:nth-child(2){
+        &:nth-child(2) {
             order: 5;
         }
-        &:nth-child(4){
+
+        &:nth-child(4) {
             order: 4
         }
-        &:nth-child(6){
+
+        &:nth-child(6) {
             order: 3;
         }
-        &:nth-child(8){
+
+        &:nth-child(8) {
             order: 2;
         }
-        &:nth-child(10){
+
+        &:nth-child(10) {
             order: 1;
         }
     }
 
-    &:not(:checked) > label svg {
-        fill: #fff
+    &:not(:checked)>label svg {
+        fill: #bcbcbc
     }
 
-    & > input{
+    &>input {
 
         display: none;
 
-        &:checked ~ label svg {
-            fill: $red
+        &:checked~label svg {
+            fill: #e8cc26
         }
 
-        &:checked + label:hover svg,
-        &:checked + label:hover ~ label svg,
-        &:checked ~ label:hover svg,
-        &:checked ~ label:hover ~ label svg{
-            fill: $red;
+        &:checked+label:hover svg,
+        &:checked+label:hover~label svg,
+        &:checked~label:hover svg,
+        &:checked~label:hover~label svg {
+            fill: #e8cc26;
         }
     }
 
-    &:not(:checked) > label:hover svg,
-    &:not(:checked) > label:hover ~ label svg {
-        fill: $red;
+    &:not(:checked)>label:hover svg,
+    &:not(:checked)>label:hover~label svg {
+        fill: #e8cc26;
     }
 
 }
- 
 
-
-
-.rate-area > label:active {
-	position: relative;
+.rate-area>label:active {
+    position: relative;
 }
+
+/* star-rating-end */

@@ -1,0 +1,14 @@
+@import "helpers/variables";
+@import "helpers/mixins";
+@import "helpers/functions";
+@import "vendor/libs";
+@import "base/fonts";
+//@import "helpers/animate";
+@import "base/general";
+@import "base/common";
+@import "../blocks/components/buttons/buttons.scss";
+
+
+@import "../blocks/modules/common/header/header";
+@import "../blocks/modules/first-block/first-block";
+@import "../blocks/modules/categories-block/categories-block";

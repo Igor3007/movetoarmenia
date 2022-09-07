@@ -3,6 +3,42 @@ mixin blog-details
         .container
             .blog-details
                 .blog-details__h1: H1 Топ 5 распространенных способов по поиску жилья в Армении 
+                .blog-details__share(data-share="container")
+                    .blog-share
+                        .blog-share__overlay
+                            .blog-share__content
+                                ul
+                                    li: a(href='#')
+                                        +bgimage('/img/svg/ic_fb-bg.svg')
+                                        small Facebook
+                                    li: a(href='#')
+                                        +bgimage('/img/svg/ic_tw-bg.svg')
+                                        small Twitter
+                                    li: a(href='#')
+                                        +bgimage('/img/svg/ic_wa-bg.svg')
+                                        small WhatsApp
+                                    li: a(href='#')
+                                        +bgimage('/img/svg/ic_tg-bg.svg')
+                                        small Telegram
+                                    li: a(href='#')
+                                        +bgimage('/img/svg/ic_pinterest.svg')
+                                        small Pinterest
+                                    li: a(href='#')
+                                        +bgimage('/img/svg/ic_linkedin.svg')
+                                        small LinkedIn
+                                    li: a(href='#')
+                                        +bgimage('/img/svg/ic_tumblr.svg')
+                                        small Tumblr
+                                    li: a(href='#')
+                                        +bgimage('/img/svg/ic_vk-bg.svg')
+                                        small VKontakte
+                                    li: a(href='#')
+                                        +bgimage('/img/svg/ic_mail-bg.svg')
+                                        small Mail
+                                    li: a(href='#' data-share="copy")
+                                        +bgimage('/img/svg/ic_copy.svg')
+                                        small Copy link
+                                   
                 .blog-details__props
                     ul
                         li
@@ -12,7 +48,7 @@ mixin blog-details
                             +bgimage('/img/calendar-days-solid.svg')
                             span  Июл 07
                             
-                        li
+                        li(data-share="open")
                             +bgimage('/img/share-nodes-solid.svg')
                             span  Поделиться
                         li

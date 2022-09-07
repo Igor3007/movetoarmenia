@@ -1,21 +1,27 @@
-mixin star-rating ()
+mixin star-svg 
+  svg(width='20' height='20' viewBox='0 0 13 12'  xmlns='http://www.w3.org/2000/svg')
+    path(d='M8.19537 3.97796L8.31361 4.20937L8.57094 4.24559L12.3223 4.77358L9.61774 7.32637L9.42142 7.51167L9.46865 7.77747L10.1127 11.4016L6.72671 9.67912L6.5 9.56378L6.27329 9.67912L2.88729 11.4016L3.53135 7.77747L3.57866 7.51123L3.38176 7.3259L0.67118 4.7745L4.42906 4.24559L4.68639 4.20937L4.80463 3.97796L6.5 0.659715L8.19537 3.97796ZM10.1397 11.6348C10.1396 11.6348 10.1397 11.6338 10.1402 11.632C10.14 11.634 10.1398 11.6349 10.1397 11.6348ZM2.85208 11.6296C2.85203 11.6296 2.85186 11.6288 2.85173 11.6271L2.85208 11.6296Z' )
+
+
+
+mixin star-rating (modify)
   .star-rating
-    input(type="radio" id="star-5" name="rating" value="5")
-    label(for="star-5" title="Оценка «5»")
-      +icons('#ic_star', 25)
+    input(type="radio" id=modify+"star-5" name=modify+"rating" value="5")
+    label(for=modify+"star-5" title="Оценка «5»")
+      +star-svg()
 
-    input(type="radio" id="star-4" name="rating" value="4")
-    label(for="star-4" title="Оценка «4»")
-      +icons('#ic_star', 25)
+    input(type="radio" id=modify+"star-4" name=modify+"rating" value="4")
+    label(for=modify+"star-4" title="Оценка «4»")
+      +star-svg()
 
-    input(type="radio" id="star-3" name="rating" value="3")
-    label(for="star-3" title="Оценка «3»")
-      +icons('#ic_star', 25)
+    input(type="radio" id=modify+"star-3" name=modify+"rating" value="3")
+    label(for=modify+"star-3" title="Оценка «3»")
+      +star-svg()
 
-    input(type="radio" id="star-2" name="rating" value="2")
-    label(for="star-2" title="Оценка «2»")
-      +icons('#ic_star', 25)
+    input(type="radio" id=modify+"star-2" name=modify+"rating" value="2")
+    label(for=modify+"star-2" title="Оценка «2»")
+      +star-svg()
 
-    input(type="radio" id="star-1" name="rating" value="1")
-    label(for="star-1" title="Оценка «1»")
-      +icons('#ic_star', 25)
+    input(type="radio" id=modify+"star-1" name=modify+"rating" value="1")
+    label(for=modify+"star-1" title="Оценка «1»")
+      +star-svg()

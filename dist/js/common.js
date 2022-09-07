@@ -165,12 +165,72 @@ document.addEventListener("DOMContentLoaded", function (event) {
             }
         })
 
+        //hide menu on scroll
+
+        let header = document.querySelector('header');
+        let scrollPrev = 0;
+
+        window.addEventListener('scroll', function () {
+
+            let scrolled = window.pageYOffset;
+
+            if (scrolled > 100) {
+                header.classList.add('header-min');
+            } else {
+                if (header.classList.contains('header-min')) {
+                    header.classList.remove('header-min');
+                }
+            }
+
+            if (scrolled > 100 && scrolled > scrollPrev) {
+                header.classList.add('out');
+            } else {
+                if (header.classList.contains('out')) {
+                    header.classList.remove('out');
+                }
+            }
+            scrollPrev = scrolled;
+
+        })
+
+
 
 
     }
 
 
+    //share
 
+    if (document.querySelector('[data-share="open"]')) {
+        document.querySelector('[data-share="open"]').addEventListener('click', function () {
+            document.querySelector('[data-share="container"]').classList.toggle('open')
+        })
+
+        document.querySelector('[data-share="container"]').addEventListener('click', function (e) {
+            if (e.target.closest('.blog-share__content')) {
+                return false
+            } else {
+                if (document.querySelector('[data-share="container"]').classList.contains('open')) {
+                    document.querySelector('[data-share="container"]').classList.remove('open')
+                }
+            }
+        })
+
+        document.querySelector('[data-share="copy"]').addEventListener('click', function (e) {
+
+            e.preventDefault()
+
+            navigator.clipboard.writeText(document.querySelector('[data-share="copy"]').getAttribute('href'))
+                .then(() => {
+                    alert('Ссылка скопирована')
+                })
+                .catch(err => {
+                    console.log('Something went wrong', err);
+                });
+        })
+
+
+    }
 
 
 

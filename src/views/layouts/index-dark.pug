@@ -33,32 +33,31 @@ html(lang="ru")
     link(rel="apple-touch-icon" sizes="1024x1024" href="img/favicons/apple-touch-icon-1024x1024.png")
 
 
-    link(rel="preload" href="/fonts/museo/subset-MuseoSansCyrl-900.woff2" as="font" crossorigin)
-    link(rel="preload" href="/fonts/museo/subset-MuseoSansCyrl-700.woff2" as="font" crossorigin)
-    link(rel="preload" href="/fonts/museo/subset-MuseoSansCyrl-300.woff2" as="font" crossorigin)
+    link(rel="preload" href="/fonts/rubik/subset-Rubik-Regular.woff2" as="font" crossorigin)
+    link(rel="preload" href="/fonts/rubik/subset-Rubik-SemiBold.woff2" as="font" crossorigin)
     link(rel="prefetch" href="/img/sprites/sprite.svg" as="image" crossorigin)
 
     style
-      include ../../styles/base/_critical-fonts.scss 
+      include ../../styles/base/_critical-fonts.scss
+
+    link(rel="stylesheet" href="styles/critical.css")
 
     link(rel="stylesheet" href="styles/main.css?v=1.0")
 
 
 
-  body.perf-no-animation
-    header
+  body.header-fixed
+    header.header-dark
       block header
-        include ../../blocks/modules/common/header/header-moderator.pug
+        include ../../blocks/modules/common/header/header.pug
     main
-      include ../../blocks/modules/moderator/page-moderator/page-moderator.pug
+      block content
     footer
       block footer
         include ../../blocks/modules/common/footer/footer.pug
     block scripts
      
+      script(src="js/main.js")
       script(src="js/vendor.js")
-      script(src="js/common.js")
-      script(src="js/moderator.js")
-
 
 

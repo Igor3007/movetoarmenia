@@ -1,0 +1,34 @@
+include ../../components/star-rating/star-rating.pug 
+
+
+mixin company-rating
+    section.section-company-rating
+        .container
+            .company-rating
+                .company-rating__wrp
+                    .company-rating__open
+                        button.btn Оценки
+                    .company-rating__form
+                        form(action='#' method='POST')
+                            .company-rating__table
+                                .company-rating__tr
+                                    .company-rating__td общая оценка наполненности
+                                    .company-rating__td: +star-rating('total-')
+                                .company-rating__tr
+                                    .company-rating__td наполненность описания
+                                    .company-rating__td: +star-rating('desc-')
+                                .company-rating__tr
+                                    .company-rating__td актуальность телефон
+                                    .company-rating__td: +star-rating('phone-')
+                                .company-rating__tr
+                                    .company-rating__td актуальность адрес
+                                    .company-rating__td: +star-rating('address-')
+                                .company-rating__tr
+                                    .company-rating__td актуальность фото
+                                    .company-rating__td: +star-rating('photo-')
+
+                            .company-rating__comment: textarea(placeholder="Комментарий...")
+                            .company-rating__btn
+                                button.btn Сохранить  
+
+

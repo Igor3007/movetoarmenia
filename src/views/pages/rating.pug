@@ -1,0 +1,26 @@
+extends ../layouts/index
+
+ 
+
+block variables
+  include ../../data/data.pug
+  - const title = "movetoarmenia"
+
+
+block content
+
+  include ../../blocks/modules/first-block/first-block.pug
+  include ../../blocks/modules/company-rating/company-rating.pug
+ 
+  +first-block-contact()
+  +company-rating
+  
+
+  
+
+
+
+
+block scripts
+  script(src="/js/vendor.js") 
+  script(src="/js/common.js") 
