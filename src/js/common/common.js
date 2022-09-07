@@ -232,6 +232,25 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
     }
 
+    //toggle blog category
+
+    var blogCategoryToggle = document.querySelector('.section-blog__sidebar-dropdown');
+    blogCategoryToggle.addEventListener('click', function (e){
+        e.stopPropagation();
+        document.querySelector('.section-blog__sidebar-list').classList.toggle('is-active');
+    })
+
+    document.addEventListener('click', function (e){
+        if(!findAncestor(e.target, 'section-blog__sidebar-list')){
+            document.querySelector('.section-blog__sidebar-list').classList.remove('is-active');
+        }
+    })
+
+
+    function findAncestor (el, cls) {
+        while ((el = el.parentElement) && !el.classList.contains(cls));
+        return el;
+    }
 
 
 

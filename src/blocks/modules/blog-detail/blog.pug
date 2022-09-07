@@ -1,0 +1,39 @@
+section.section-blog
+    .section-blog__sidebar
+        .container
+            -
+                var list = [
+                    {icon: "1",caption: "Рестораны, бары, кафе"},
+                    {icon: "2",caption: "Покупки"},
+                    {icon: "3",caption: "Развлечения"},
+                    {icon: "4",caption: "Образование"},
+                    {icon: "5",caption: "Дети"},
+                    {icon: "6",caption: "Работа"},
+                    {icon: "7",caption: "Жилье"},
+                    {icon: "8",caption: "Переезд/перелет"},
+                    {icon: "9",caption: "Право и закон"},
+                    {icon: "10",caption: "Финансы и банки"},
+                    {icon: "11",caption: "Общество"},
+                    {icon: "12",caption: "Спорт"},
+                    {icon: "13",caption: "Туризм"},
+                    {icon: "14",caption: "Медицина"},
+                    {icon: "15",caption: "Животные"},
+                    {icon: "16",caption: "Красота и уход"},
+                    {icon: "17",caption: "Транспорт"},
+                    {icon: "18",caption: "Быт"},
+                    {icon: "19",caption: "Личный опыт"},
+                    {icon: "20",caption: "Культура"},
+                    {icon: "21",caption: "Спецпроект"},
+                ]
+
+            ul.section-blog__sidebar-list
+                each item in list
+                    li
+                        a(href="#")
+                            span.icon: img(loading="lazy" src="img/blog/"+item.icon+".svg" width=25 height=25)
+                            span=item.caption
+
+            .section-blog__sidebar-bg
+    .section-blog__content
+        .container
+            .section-blog__article

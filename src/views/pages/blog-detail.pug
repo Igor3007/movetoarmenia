@@ -1,0 +1,16 @@
+extends ../layouts/index-dark
+
+
+
+block variables
+  include ../../data/data.pug
+  - const title = "movetoarmenia"
+
+
+block content
+
+  include ../../blocks/modules/blog-detail/blog
+
+block scripts
+  script(src="/js/vendor.js")
+  script(src="/js/common.js") 

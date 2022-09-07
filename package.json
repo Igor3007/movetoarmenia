@@ -72,7 +72,6 @@
         "smart-grid": "^2.1.2"
     },
     "dependencies": {
-
         "lazysizes": "^5.3.2"
     }
 }

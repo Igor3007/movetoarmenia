@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>movetoarmenia</title>
+    <meta name="theme-color" content="#fff">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="description" content="#{title}">
+    <meta name="keywords" content="#{title}">
+    <link rel="shortcut icon" href="img/favicons/favicon.ico" type="image/x-icon">
+    <link rel="icon" sizes="16x16" href="img/favicons/favicon-16x16.png" type="image/png">
+    <link rel="icon" sizes="32x32" href="img/favicons/favicon-32x32.png" type="image/png">
+    <link rel="apple-touch-icon-precomposed" href="img/favicons/apple-touch-icon-precomposed.png">
+    <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/favicons/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/favicons/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="167x167" href="img/favicons/apple-touch-icon-167x167.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon-180x180.png">
+    <link rel="apple-touch-icon" sizes="1024x1024" href="img/favicons/apple-touch-icon-1024x1024.png">
+    <link rel="preload" href="/fonts/rubik/subset-Rubik-Regular.woff2" as="font" crossorigin>
+    <link rel="preload" href="/fonts/rubik/subset-Rubik-SemiBold.woff2" as="font" crossorigin>
+    <link rel="prefetch" href="/img/sprites/sprite.svg" as="image" crossorigin>
+    <style>@font-face {
+    font-family: 'Rubik';
+    src: url('/fonts/rubik/subset-Rubik-SemiBold.woff2') format('woff2'),
+        url('/fonts/rubik/subset-Rubik-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Rubik';
+    src: url('/fonts/rubik/subset-Rubik-Regular.woff2') format('woff2'),
+        url('/fonts/rubik/subset-Rubik-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+    </style>
+    <link rel="stylesheet" href="styles/critical.min.css">
+    <link rel="stylesheet" href="styles/main.min.css?v=1.0">
+  </head>
+  <body class="header-fixed">
+    <header class="header-dark">
+      <div class="container">
+        <div class="header">
+          <div class="header-top">
+            <div class="header-top__logo"><a href="/"><span class="bgimage lazyload" data-bg="/img/logo.png"></span></a></div>
+            <div class="header-top__nav">
+              <div class="header-nav" data-menu="container">
+                <nav>
+                  <ul>
+                    <li><a href="/">Главная</a>
+                    </li>
+                    <li><a href="#process">Каталог</a><span class="sub-arrow"></span>
+                      <ul>
+                        <li><a href="#product">Вакансии</a></li>
+                        <li><a href="#product">Новостройки</a></li>
+                        <li><a href="#product">Консалтинг</a></li>
+                        <li><a href="#product">Детские сады</a></li>
+                        <li><a href="#product">Коворкинги</a></li>
+                        <li><a href="#product">Медицина</a></li>
+                        <li><a href="#product">Финансы</a></li>
+                        <li><a href="#product">Языковые курсы</a></li>
+                        <li><a href="#product">Спорт</a></li>
+                        <li><a href="#product">Путешествия</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="blog.html">Блог</a>
+                    </li>
+                    <li><a href="event.html">Мероприятия</a>
+                    </li>
+                    <li><a href="contacts.html">Контакты</a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+            <div class="header-top__login"><span class="login-icon">
+                <svg width="25" height="25">
+                  <use xlink:href="/img/sprites/sprite.svg#ic_user"></use>
+                </svg></span>
+              <ul>
+                <li><a href="/index-login.html">Войти</a></li>
+                <li><a href="#">Регистрация</a></li>
+              </ul>
+            </div>
+            <div class="header-top__burger">
+              <div class="btn-burger" data-menu="btn"><i></i><i></i><i> </i></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="section-blog">
+        <div class="section-blog__sidebar">
+          <div class="container">
+            <div class="section-blog__sidebar-dropdown"><span>Рубрики</span>
+              <svg width="20" height="20">
+                <use xlink:href="/img/sprites/sprite.svg#ic_chevron"></use>
+              </svg>
+            </div>
+            <ul class="section-blog__sidebar-list">
+              <li><a href="#"><span class="icon"><img loading="lazy" src="img/blog/1.svg" width="25" height="25"></span><span>Рестораны, бары, кафе</span></a>
+              </li>
+              <li><a href="#"><span class="icon"><img loading="lazy" src="img/blog/2.svg" width="25" height="25"></span><span>Покупки</span></a>
+              </li>
+              <li><a href="#"><span class="icon"><img loading="lazy" src="img/blog/3.svg" width="25" height="25"></span><span>Развлечения</span></a>
+              </li>
+              <li><a href="#"><span class="icon"><img loading="lazy" src="img/blog/4.svg" width="25" height="25"></span><span>Образование</span></a>
+              </li>
+              <li><a href="#"><span class="icon"><img loading="lazy" src="img/blog/5.svg" width="25" height="25"></span><span>Дети</span></a>
+              </li>
+              <li><a href="#"><span class="icon"><img loading="lazy" src="img/blog/6.svg" width="25" height="25"></span><span>Работа</span></a>
+              </li>
+              <li><a href="#"><span class="icon"><img loading="lazy" src="img/blog/7.svg" width="25" height="25"></span><span>Жилье</span></a>
+              </li>
+              <li><a href="#"><span class="icon"><img loading="lazy" src="img/blog/8.svg" width="25" height="25"></span><span>Переезд/перелет</span></a>
+              </li>
+              <li><a href="#"><span class="icon"><img loading="lazy" src="img/blog/9.svg" width="25" height="25"></span><span>Право и закон</span></a>
+              </li>
+              <li><a href="#"><span class="icon"><img loading="lazy" src="img/blog/10.svg" width="25" height="25"></span><span>Финансы и банки</span></a>
+              </li>
+              <li><a href="#"><span class="icon"><img loading="lazy" src="img/blog/11.svg" width="25" height="25"></span><span>Общество</span></a>
+              </li>
+              <li><a href="#"><span class="icon"><img loading="lazy" src="img/blog/12.svg" width="25" height="25"></span><span>Спорт</span></a>
+              </li>
+              <li><a class="is-active" href="#"><span class="icon"><img loading="lazy" src="img/blog/13.svg" width="25" height="25"></span><span>Туризм</span></a>
+              </li>
+              <li><a href="#"><span class="icon"><img loading="lazy" src="img/blog/14.svg" width="25" height="25"></span><span>Медицина</span></a>
+              </li>
+              <li><a href="#"><span class="icon"><img loading="lazy" src="img/blog/15.svg" width="25" height="25"></span><span>Животные</span></a>
+              </li>
+              <li><a href="#"><span class="icon"><img loading="lazy" src="img/blog/16.svg" width="25" height="25"></span><span>Красота и уход</span></a>
+              </li>
+              <li><a href="#"><span class="icon"><img loading="lazy" src="img/blog/17.svg" width="25" height="25"></span><span>Транспорт</span></a>
+              </li>
+              <li><a href="#"><span class="icon"><img loading="lazy" src="img/blog/18.svg" width="25" height="25"></span><span>Быт</span></a>
+              </li>
+              <li><a href="#"><span class="icon"><img loading="lazy" src="img/blog/19.svg" width="25" height="25"></span><span>Личный опыт</span></a>
+              </li>
+              <li><a href="#"><span class="icon"><img loading="lazy" src="img/blog/20.svg" width="25" height="25"></span><span>Культура</span></a>
+              </li>
+              <li><a href="#"><span class="icon"><img loading="lazy" src="img/blog/21.svg" width="25" height="25"></span><span>Спецпроект</span></a>
+              </li>
+            </ul>
+            <div class="section-blog__sidebar-bg"></div>
+          </div>
+        </div>
+        <div class="section-blog__category">
+          <div class="container">
+            <div class="section-blog__category-image">
+              <picture>
+                <source srcset="img/blog/cat.webp" type="image/webp"><img loading="lazy" src="img/blog/cat.png" width="300" height="230">
+              </picture>
+            </div>
+            <div class="section-blog__category-text">
+              <div class="icon"><img src="img/blog/cat.svg" width="36" height="36"></div>
+              <div class="title">Туризм</div>
+              <div class="desc">Все, что нужно знать путешественникам в 2022 году: как отдохнуть за границей, спланировать восхитительный отпуск в России, сэкономить и не дать себя обмануть</div>
+            </div>
+          </div>
+        </div>
+        <div class="section-blog__content">
+          <div class="container">
+            <div class="section-blog__items"><a class="section-blog__item" href="#">
+                <div class="section-blog__item-image">
+                  <picture>
+                    <source srcset="img/blog/blog-1.webp" type="image/webp"><img loading="lazy" src="img/blog/blog-1.png" width="290" height="178">
+                  </picture>
+                </div>
+                <div class="section-blog__item-head">
+                  <div class="section-blog__item-author">
+                    <div class="image">
+                      <picture>
+                        <source srcset="img/blog/author-1.webp" type="image/webp"><img loading="lazy" src="img/blog/author-1.png" width="24" height="24">
+                      </picture>
+                    </div>
+                    <div class="name">Яна Рубинкова</div>
+                    <div class="time">3 часа</div>
+                  </div>
+                  <div class="section-blog__item-share">
+                    <svg width="25" height="25">
+                      <use xlink:href="/img/sprites/sprite.svg#ic_share"></use>
+                    </svg>
+                  </div>
+                </div>
+                <div class="section-blog__item-title">Может ли Евросоюз запретить выдачу шенгенских виз</div>
+                <div class="section-blog__item-desc">30 и 31 августа министры иностранных дел ЕС обсудят запрет на выдачу шенгенских виз гражданам России.</div>
+                <div class="section-blog__item-footer">
+                  <div class="section-blog__item-tags">
+                    <div class="section-blog__item-tag">#туризм</div>
+                  </div>
+                  <div class="section-blog__item-comments"><span>5</span>
+                    <svg width="25" height="25">
+                      <use xlink:href="/img/sprites/sprite.svg#ic_comment"></use>
+                    </svg>
+                  </div>
+                </div></a><a class="section-blog__item" href="#">
+                <div class="section-blog__item-image">
+                  <picture>
+                    <source srcset="img/blog/blog-2.webp" type="image/webp"><img loading="lazy" src="img/blog/blog-2.png" width="290" height="178">
+                  </picture>
+                </div>
+                <div class="section-blog__item-head">
+                  <div class="section-blog__item-author">
+                    <div class="image">
+                      <picture>
+                        <source srcset="img/blog/author-2.webp" type="image/webp"><img loading="lazy" src="img/blog/author-2.png" width="24" height="24">
+                      </picture>
+                    </div>
+                    <div class="name">Ильяс Шаповалов</div>
+                    <div class="time">7 часов</div>
+                  </div>
+                  <div class="section-blog__item-share">
+                    <svg width="25" height="25">
+                      <use xlink:href="/img/sprites/sprite.svg#ic_share"></use>
+                    </svg>
+                  </div>
+                </div>
+                <div class="section-blog__item-title">Депрессия и ВИЧ: чем болеют жители больших городов</div>
+                <div class="section-blog__item-desc">По данным ВОЗ, жители больших городов по всему миру чаще всего страдают от 10 заболеваний. В России...</div>
+                <div class="section-blog__item-footer">
+                  <div class="section-blog__item-tags">
+                    <div class="section-blog__item-tag">#медицина</div>
+                  </div>
+                  <div class="section-blog__item-comments"><span>13</span>
+                    <svg width="25" height="25">
+                      <use xlink:href="/img/sprites/sprite.svg#ic_comment"></use>
+                    </svg>
+                  </div>
+                </div></a><a class="section-blog__item" href="#">
+                <div class="section-blog__item-image">
+                  <picture>
+                    <source srcset="img/blog/blog-3.webp" type="image/webp"><img loading="lazy" src="img/blog/blog-3.png" width="290" height="178">
+                  </picture>
+                </div>
+                <div class="section-blog__item-head">
+                  <div class="section-blog__item-author">
+                    <div class="image">
+                      <picture>
+                        <source srcset="img/blog/author-3.webp" type="image/webp"><img loading="lazy" src="img/blog/author-3.png" width="24" height="24">
+                      </picture>
+                    </div>
+                    <div class="name">Яна Рубинкова</div>
+                    <div class="time">21.05.22</div>
+                  </div>
+                  <div class="section-blog__item-share">
+                    <svg width="25" height="25">
+                      <use xlink:href="/img/sprites/sprite.svg#ic_share"></use>
+                    </svg>
+                  </div>
+                </div>
+                <div class="section-blog__item-title">Дорогие покупки, о которых не пришлось жалеть</div>
+                <div class="section-blog__item-desc">Мы уже публиковали альбом дорогих приобретений, которые делают наших читателей счастливее.</div>
+                <div class="section-blog__item-footer">
+                  <div class="section-blog__item-tags">
+                    <div class="section-blog__item-tag">#покупки</div>
+                  </div>
+                  <div class="section-blog__item-comments"><span>13</span>
+                    <svg width="25" height="25">
+                      <use xlink:href="/img/sprites/sprite.svg#ic_comment"></use>
+                    </svg>
+                  </div>
+                </div></a><a class="section-blog__item" href="#">
+                <div class="section-blog__item-image">
+                  <picture>
+                    <source srcset="img/blog/blog-4.webp" type="image/webp"><img loading="lazy" src="img/blog/blog-4.png" width="290" height="178">
+                  </picture>
+                </div>
+                <div class="section-blog__item-head">
+                  <div class="section-blog__item-author">
+                    <div class="image">
+                      <picture>
+                        <source srcset="img/blog/author-4.webp" type="image/webp"><img loading="lazy" src="img/blog/author-4.png" width="24" height="24">
+                      </picture>
+                    </div>
+                    <div class="name">Даниил Давыдов</div>
+                    <div class="time">20.05.22</div>
+                  </div>
+                  <div class="section-blog__item-share">
+                    <svg width="25" height="25">
+                      <use xlink:href="/img/sprites/sprite.svg#ic_share"></use>
+                    </svg>
+                  </div>
+                </div>
+                <div class="section-blog__item-title">В каких реальных местах из фильмов и сериалов вы хотели бы побывать?</div>
+                <div class="section-blog__item-desc">Известные достопримечательности вроде Эйфелевой башни привлекают...</div>
+                <div class="section-blog__item-footer">
+                  <div class="section-blog__item-tags">
+                    <div class="section-blog__item-tag">#туризм</div>
+                  </div>
+                  <div class="section-blog__item-comments"><span>2</span>
+                    <svg width="25" height="25">
+                      <use xlink:href="/img/sprites/sprite.svg#ic_comment"></use>
+                    </svg>
+                  </div>
+                </div></a><a class="section-blog__item" href="#">
+                <div class="section-blog__item-image">
+                  <picture>
+                    <source srcset="img/blog/blog-5.webp" type="image/webp"><img loading="lazy" src="img/blog/blog-5.png" width="290" height="178">
+                  </picture>
+                </div>
+                <div class="section-blog__item-head">
+                  <div class="section-blog__item-author">
+                    <div class="image">
+                      <picture>
+                        <source srcset="img/blog/author-5.webp" type="image/webp"><img loading="lazy" src="img/blog/author-5.png" width="24" height="24">
+                      </picture>
+                    </div>
+                    <div class="name">Яна Рубинкова</div>
+                    <div class="time">3 часа</div>
+                  </div>
+                  <div class="section-blog__item-share">
+                    <svg width="25" height="25">
+                      <use xlink:href="/img/sprites/sprite.svg#ic_share"></use>
+                    </svg>
+                  </div>
+                </div>
+                <div class="section-blog__item-title">Стоит ли заменить кофе цикорием?</div>
+                <div class="section-blog__item-desc">На сайтах о здоровом питании регулярно вижу советы заменить кофе цикорием: мол, это поможет избежать кофеиновой зависимости...</div>
+                <div class="section-blog__item-footer">
+                  <div class="section-blog__item-tags">
+                    <div class="section-blog__item-tag">#туризм</div>
+                  </div>
+                  <div class="section-blog__item-comments"><span>5</span>
+                    <svg width="25" height="25">
+                      <use xlink:href="/img/sprites/sprite.svg#ic_comment"></use>
+                    </svg>
+                  </div>
+                </div></a><a class="section-blog__item" href="#">
+                <div class="section-blog__item-image">
+                  <picture>
+                    <source srcset="img/blog/blog-6.webp" type="image/webp"><img loading="lazy" src="img/blog/blog-6.png" width="290" height="178">
+                  </picture>
+                </div>
+                <div class="section-blog__item-head">
+                  <div class="section-blog__item-author">
+                    <div class="image">
+                      <picture>
+                        <source srcset="img/blog/author-6.webp" type="image/webp"><img loading="lazy" src="img/blog/author-6.png" width="24" height="24">
+                      </picture>
+                    </div>
+                    <div class="name">Даниил Давыдов</div>
+                    <div class="time">2 дня</div>
+                  </div>
+                  <div class="section-blog__item-share">
+                    <svg width="25" height="25">
+                      <use xlink:href="/img/sprites/sprite.svg#ic_share"></use>
+                    </svg>
+                  </div>
+                </div>
+                <div class="section-blog__item-title">После декрета заставляют уволиться. Как поступить?</div>
+                <div class="section-blog__item-desc">Я работаю территориальным управляющим, сейчас нахожусь в отпуске по уходу за ребенком до трех лет. Хотела выйти из декрета, но...</div>
+                <div class="section-blog__item-footer">
+                  <div class="section-blog__item-tags">
+                    <div class="section-blog__item-tag">#работа</div>
+                  </div>
+                  <div class="section-blog__item-comments"><span>2</span>
+                    <svg width="25" height="25">
+                      <use xlink:href="/img/sprites/sprite.svg#ic_comment"></use>
+                    </svg>
+                  </div>
+                </div></a><a class="section-blog__item" href="#">
+                <div class="section-blog__item-image">
+                  <picture>
+                    <source srcset="img/blog/blog-1.webp" type="image/webp"><img loading="lazy" src="img/blog/blog-1.png" width="290" height="178">
+                  </picture>
+                </div>
+                <div class="section-blog__item-head">
+                  <div class="section-blog__item-author">
+                    <div class="image">
+                      <picture>
+                        <source srcset="img/blog/author-1.webp" type="image/webp"><img loading="lazy" src="img/blog/author-1.png" width="24" height="24">
+                      </picture>
+                    </div>
+                    <div class="name">Яна Рубинкова</div>
+                    <div class="time">3 часа</div>
+                  </div>
+                  <div class="section-blog__item-share">
+                    <svg width="25" height="25">
+                      <use xlink:href="/img/sprites/sprite.svg#ic_share"></use>
+                    </svg>
+                  </div>
+                </div>
+                <div class="section-blog__item-title">Может ли Евросоюз запретить выдачу шенгенских виз</div>
+                <div class="section-blog__item-desc">30 и 31 августа министры иностранных дел ЕС обсудят запрет на выдачу шенгенских виз гражданам России.</div>
+                <div class="section-blog__item-footer">
+                  <div class="section-blog__item-tags">
+                    <div class="section-blog__item-tag">#туризм</div>
+                  </div>
+                  <div class="section-blog__item-comments"><span>5</span>
+                    <svg width="25" height="25">
+                      <use xlink:href="/img/sprites/sprite.svg#ic_comment"></use>
+                    </svg>
+                  </div>
+                </div></a><a class="section-blog__item" href="#">
+                <div class="section-blog__item-image">
+                  <picture>
+                    <source srcset="img/blog/blog-2.webp" type="image/webp"><img loading="lazy" src="img/blog/blog-2.png" width="290" height="178">
+                  </picture>
+                </div>
+                <div class="section-blog__item-head">
+                  <div class="section-blog__item-author">
+                    <div class="image">
+                      <picture>
+                        <source srcset="img/blog/author-2.webp" type="image/webp"><img loading="lazy" src="img/blog/author-2.png" width="24" height="24">
+                      </picture>
+                    </div>
+                    <div class="name">Ильяс Шаповалов</div>
+                    <div class="time">7 часов</div>
+                  </div>
+                  <div class="section-blog__item-share">
+                    <svg width="25" height="25">
+                      <use xlink:href="/img/sprites/sprite.svg#ic_share"></use>
+                    </svg>
+                  </div>
+                </div>
+                <div class="section-blog__item-title">Депрессия и ВИЧ: чем болеют жители больших городов</div>
+                <div class="section-blog__item-desc">По данным ВОЗ, жители больших городов по всему миру чаще всего страдают от 10 заболеваний. В России...</div>
+                <div class="section-blog__item-footer">
+                  <div class="section-blog__item-tags">
+                    <div class="section-blog__item-tag">#медицина</div>
+                  </div>
+                  <div class="section-blog__item-comments"><span>13</span>
+                    <svg width="25" height="25">
+                      <use xlink:href="/img/sprites/sprite.svg#ic_comment"></use>
+                    </svg>
+                  </div>
+                </div></a>
+            </div>
+            <div class="section-blog__showmore">Показать ещё</div>
+            <div class="section-blog__pagination"><a class="prev" href="#">
+                <svg width="20" height="20">
+                  <use xlink:href="/img/sprites/sprite.svg#ic_prev"></use>
+                </svg></a>
+              <ul class="pages">
+                <li><a class="is-active" href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">...</a></li>
+                <li><a href="#">10</a></li>
+              </ul><a class="next" href="#">
+                <svg width="20" height="20">
+                  <use xlink:href="/img/sprites/sprite.svg#ic_next"></use>
+                </svg></a>
+            </div>
+          </div>
+        </div>
+        <div class="section-blog__others">
+          <div class="container">
+            <div class="section-blog__others-title">Это интересно</div>
+            <div class="section-blog__others-items"><a class="section-blog__others-item" href="#">
+                <div class="image">
+                  <picture>
+                    <source srcset="img/blog/auth-1.webp" type="image/webp"><img loading="lazy" src="img/blog/auth-1.png" width="24" height="24">
+                  </picture>
+                </div>
+                <div class="name">Арам Апанесян</div>
+                <div class="text">Изучаем результаты АФК «Система»: рост продаж привел к кратному увеличению чистого убытка</div></a><a class="section-blog__others-item" href="#">
+                <div class="image">
+                  <picture>
+                    <source srcset="img/blog/auth-2.webp" type="image/webp"><img loading="lazy" src="img/blog/auth-2.png" width="24" height="24">
+                  </picture>
+                </div>
+                <div class="name">Анна Афанасьева</div>
+                <div class="text">Результаты «Татнефти»: денег больше, чем долгов, найдены лазейки для обхода санкций</div></a><a class="section-blog__others-item" href="#">
+                <div class="image">
+                  <picture>
+                    <source srcset="img/blog/auth-3.webp" type="image/webp"><img loading="lazy" src="img/blog/auth-3.png" width="24" height="24">
+                  </picture>
+                </div>
+                <div class="name">Ануш Саркисян</div>
+                <div class="text">Как я оформила банковскую карту в Армении в 2022 году</div></a><a class="section-blog__others-item" href="#">
+                <div class="image">
+                  <picture>
+                    <source srcset="img/blog/auth-4.webp" type="image/webp"><img loading="lazy" src="img/blog/auth-4.png" width="24" height="24">
+                  </picture>
+                </div>
+                <div class="name">Ирина Васильевна</div>
+                <div class="text">Я выучила французский с нуля и стала переводчиком-любителем</div></a><a class="section-blog__others-item" href="#">
+                <div class="image">
+                  <picture>
+                    <source srcset="img/blog/auth-5.webp" type="image/webp"><img loading="lazy" src="img/blog/auth-5.png" width="24" height="24">
+                  </picture>
+                </div>
+                <div class="name">Андрей Чижов</div>
+                <div class="text">Стоит ли покупать Макбук, если не пользуешься экосистемой «Эпл»?</div></a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="container">
+        <div class="footer"> 
+          <div class="footer__social">
+            <ul>
+              <li><a href="#" target="_blank" style="background-color: #3b5998"><span class="bgimage lazyload" data-bg="/img/svg/ic_fb.svg"></span></a></li>
+              <li><a href="#" target="_blank" style="background-color: #f00"><span class="bgimage lazyload" data-bg="/img/svg/ic_yt.svg"></span></a></li>
+              <li><a href="#" target="_blank" style="background-color: #e1306c"><span class="bgimage lazyload" data-bg="/img/svg/ic_ig.svg"></span></a></li>
+              <li><a href="#" target="_blank" style="background-color: #249EDA"><span class="bgimage lazyload" data-bg="/img/svg/ic_tg.svg"></span></a></li>
+              <li><a href="#" target="_blank" style="background-color: #0075F7"><span class="bgimage lazyload" data-bg="/img/svg/ic_vk.svg"></span></a></li>
+            </ul>
+          </div>
+          <div class="footer__copyright"><span>© 2022 Move2Armenia. Все права защищены</span></div>
+        </div>
+      </div>
+    </footer>
+    <script src="/js/vendor.min.js"></script>
+    <script src="/js/common.min.js"> </script>
+  </body>
+</html>

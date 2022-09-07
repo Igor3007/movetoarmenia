@@ -1,0 +1,201 @@
+section.section-blog
+    .section-blog__sidebar
+        .container
+            .section-blog__sidebar-dropdown
+                span Рубрики
+                +icons('#ic_chevron', 20)
+            -
+                var list = [
+                    {icon: "1",caption: "Рестораны, бары, кафе"},
+                    {icon: "2",caption: "Покупки"},
+                    {icon: "3",caption: "Развлечения"},
+                    {icon: "4",caption: "Образование"},
+                    {icon: "5",caption: "Дети"},
+                    {icon: "6",caption: "Работа"},
+                    {icon: "7",caption: "Жилье"},
+                    {icon: "8",caption: "Переезд/перелет"},
+                    {icon: "9",caption: "Право и закон"},
+                    {icon: "10",caption: "Финансы и банки"},
+                    {icon: "11",caption: "Общество"},
+                    {icon: "12",caption: "Спорт"},
+                    {icon: "13",caption: "Туризм"},
+                    {icon: "14",caption: "Медицина"},
+                    {icon: "15",caption: "Животные"},
+                    {icon: "16",caption: "Красота и уход"},
+                    {icon: "17",caption: "Транспорт"},
+                    {icon: "18",caption: "Быт"},
+                    {icon: "19",caption: "Личный опыт"},
+                    {icon: "20",caption: "Культура"},
+                    {icon: "21",caption: "Спецпроект"},
+                ]
+
+            ul.section-blog__sidebar-list
+                each item in list
+                    li
+                        a(href="#")
+                            span.icon: img(loading="lazy" src="img/blog/"+item.icon+".svg" width=25 height=25)
+                            span=item.caption
+
+            .section-blog__sidebar-bg
+    .section-blog__content
+        .container
+            .section-blog__items
+                -
+                    var blog = [
+                        {
+                            image: "img/blog/blog-1",
+                            author: "img/blog/author-1",
+                            name: "Яна Рубинкова",
+                            time: "3 часа",
+                            title: "Может ли Евросоюз запретить выдачу шенгенских виз",
+                            desc: "30 и 31 августа министры иностранных дел ЕС обсудят запрет на выдачу шенгенских виз гражданам России.",
+                            tags: ["#туризм"],
+                            comment: 5,
+                        },
+                        {
+                            image: "img/blog/blog-2",
+                            author: "img/blog/author-2",
+                            name: "Ильяс Шаповалов",
+                            time: "7 часов",
+                            title: "Депрессия и ВИЧ: чем болеют жители больших городов",
+                            desc: "По данным ВОЗ, жители больших городов по всему миру чаще всего страдают от 10 заболеваний. В России...",
+                            tags: ["#медицина"],
+                            comment: 13,
+                        },
+                        {
+                            image: "img/blog/blog-3",
+                            author: "img/blog/author-3",
+                            name: "Яна Рубинкова",
+                            time: "21.05.22",
+                            title: "Дорогие покупки, о которых не пришлось жалеть",
+                            desc: "Мы уже публиковали альбом дорогих приобретений, которые делают наших читателей счастливее.",
+                            tags: ["#покупки"],
+                            comment: 13,
+                        },
+                        {
+                            image: "img/blog/blog-4",
+                            author: "img/blog/author-4",
+                            name: "Даниил Давыдов",
+                            time: "20.05.22",
+                            title: "В каких реальных местах из фильмов и сериалов вы хотели бы побывать?",
+                            desc: "Известные достопримечательности вроде Эйфелевой башни привлекают...",
+                            tags: ["#туризм"],
+                            comment: 2,
+                        },
+                        {
+                            image: "img/blog/blog-5",
+                            author: "img/blog/author-5",
+                            name: "Яна Рубинкова",
+                            time: "3 часа",
+                            title: "Стоит ли заменить кофе цикорием?",
+                            desc: "На сайтах о здоровом питании регулярно вижу советы заменить кофе цикорием: мол, это поможет избежать кофеиновой зависимости...",
+                            tags: ["#туризм"],
+                            comment: 5,
+                        },
+                        {
+                            image: "img/blog/blog-6",
+                            author: "img/blog/author-6",
+                            name: "Даниил Давыдов",
+                            time: "2 дня",
+                            title: "После декрета заставляют уволиться. Как поступить?",
+                            desc: "Я работаю территориальным управляющим, сейчас нахожусь в отпуске по уходу за ребенком до трех лет. Хотела выйти из декрета, но...",
+                            tags: ["#работа"],
+                            comment: 2,
+                        },
+                        {
+                            image: "img/blog/blog-1",
+                            author: "img/blog/author-1",
+                            name: "Яна Рубинкова",
+                            time: "3 часа",
+                            title: "Может ли Евросоюз запретить выдачу шенгенских виз",
+                            desc: "30 и 31 августа министры иностранных дел ЕС обсудят запрет на выдачу шенгенских виз гражданам России.",
+                            tags: ["#туризм"],
+                            comment: 5,
+                        },
+                        {
+                            image: "img/blog/blog-2",
+                            author: "img/blog/author-2",
+                            name: "Ильяс Шаповалов",
+                            time: "7 часов",
+                            title: "Депрессия и ВИЧ: чем болеют жители больших городов",
+                            desc: "По данным ВОЗ, жители больших городов по всему миру чаще всего страдают от 10 заболеваний. В России...",
+                            tags: ["#медицина"],
+                            comment: 13,
+                        }
+                    ]
+
+                each item in blog
+                    a(href="#").section-blog__item
+                        .section-blog__item-image
+                            picture
+                                source(srcset=item.image + ".webp" type="image/webp")
+                                img(loading="lazy" src=item.image + ".png" width=290 height=178)
+                        .section-blog__item-head
+                            .section-blog__item-author
+                                .image
+                                    picture
+                                        source(srcset=item.author + ".webp" type="image/webp")
+                                        img(loading="lazy" src=item.author + ".png" width=24 height=24)
+                                .name=item.name
+                                .time=item.time
+                            .section-blog__item-share: +icons("#ic_share", 25)
+                        .section-blog__item-title=item.title
+                        .section-blog__item-desc=item.desc
+                        .section-blog__item-footer
+                            .section-blog__item-tags
+                                each tag in item.tags
+                                    .section-blog__item-tag=tag
+                            .section-blog__item-comments
+                                span=item.comment
+                                +icons('#ic_comment', 25)
+            .section-blog__showmore Показать ещё
+            .section-blog__pagination
+                a(href="#").prev: +icons("#ic_prev", 20)
+                ul.pages
+                    li: a(href="#").is-active 1
+                    li: a(href="#") 2
+                    li: a(href="#") 3
+                    li: a(href="#") ...
+                    li: a(href="#") 10
+                a(href="#").next: +icons("#ic_next", 20)
+    .section-blog__others
+        .container
+            .section-blog__others-title Это интересно
+            .section-blog__others-items
+                -
+                    var others = [
+                        {
+                            image: "img/blog/auth-1",
+                            name: "Арам Апанесян",
+                            text: "Изучаем результаты АФК «Система»: рост продаж привел к кратному увеличению чистого убытка"
+                        },
+                        {
+                            image: "img/blog/auth-2",
+                            name: "Анна Афанасьева",
+                            text: "Результаты «Татнефти»: денег больше, чем долгов, найдены лазейки для обхода санкций"
+                        },
+                        {
+                            image: "img/blog/auth-3",
+                            name: "Ануш Саркисян",
+                            text: "Как я оформила банковскую карту в Армении в 2022 году"
+                        },
+                        {
+                            image: "img/blog/auth-4",
+                            name: "Ирина Васильевна",
+                            text: "Я выучила французский с нуля и стала переводчиком-любителем"
+                        },
+                        {
+                            image: "img/blog/auth-5",
+                            name: "Андрей Чижов",
+                            text: "Стоит ли покупать Макбук, если не пользуешься экосистемой «Эпл»?"
+                        }
+                    ]
+
+                each item in others
+                    a(href="#").section-blog__others-item
+                        .image
+                            picture
+                                source(srcset=item.image + ".webp" type="image/webp")
+                                img(loading="lazy" src=item.image + ".png" width=24 height=24)
+                        .name=item.name
+                        .text=item.text
