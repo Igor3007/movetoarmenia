@@ -235,10 +235,12 @@ document.addEventListener("DOMContentLoaded", function (event) {
     //toggle blog category
 
     var blogCategoryToggle = document.querySelector('.section-blog__sidebar-dropdown');
-    blogCategoryToggle.addEventListener('click', function (e){
-        e.stopPropagation();
-        document.querySelector('.section-blog__sidebar-list').classList.toggle('is-active');
-    })
+    if(blogCategoryToggle){
+        blogCategoryToggle.addEventListener('click', function (e){
+            e.stopPropagation();
+            document.querySelector('.section-blog__sidebar-list').classList.toggle('is-active');
+        })
+    }
 
     document.addEventListener('click', function (e){
         if(!findAncestor(e.target, 'section-blog__sidebar-list')){
@@ -246,15 +248,43 @@ document.addEventListener("DOMContentLoaded", function (event) {
         }
     })
 
-
     function findAncestor (el, cls) {
         while ((el = el.parentElement) && !el.classList.contains(cls));
         return el;
     }
 
+    document.querySelectorAll('.section-blog__article-text .splide').forEach(function (el){
+        new Splide(el, {
+            perPage: 1,
+            pagination: true,
+            arrows: false,
+            gap: 16,
+            mediaQuery: 'min',
+            breakpoints: {
+                767: {
+                    arrows: true,
+                },
+            }
+        }).mount();
+    })
 
-
-
+    document.querySelectorAll(".section-blog__sect .splide").forEach(function (el){
+        new Splide(el, {
+            perPage: 1,
+            pagination: false,
+            arrows: false,
+            gap: 16,
+            mediaQuery: 'min',
+            breakpoints: {
+                767: {
+                    perPage: 2,
+                },
+                1366: {
+                    perPage: 3,
+                }
+            }
+        }).mount();
+    })
 
 
 

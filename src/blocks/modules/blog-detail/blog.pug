@@ -1,39 +1,388 @@
-section.section-blog
+section.section-blog.section-blog-detail
     .section-blog__sidebar
         .container
             -
                 var list = [
-                    {icon: "1",caption: "Рестораны, бары, кафе"},
-                    {icon: "2",caption: "Покупки"},
-                    {icon: "3",caption: "Развлечения"},
-                    {icon: "4",caption: "Образование"},
-                    {icon: "5",caption: "Дети"},
-                    {icon: "6",caption: "Работа"},
-                    {icon: "7",caption: "Жилье"},
-                    {icon: "8",caption: "Переезд/перелет"},
-                    {icon: "9",caption: "Право и закон"},
-                    {icon: "10",caption: "Финансы и банки"},
-                    {icon: "11",caption: "Общество"},
-                    {icon: "12",caption: "Спорт"},
-                    {icon: "13",caption: "Туризм"},
-                    {icon: "14",caption: "Медицина"},
-                    {icon: "15",caption: "Животные"},
-                    {icon: "16",caption: "Красота и уход"},
-                    {icon: "17",caption: "Транспорт"},
-                    {icon: "18",caption: "Быт"},
-                    {icon: "19",caption: "Личный опыт"},
-                    {icon: "20",caption: "Культура"},
-                    {icon: "21",caption: "Спецпроект"},
+                    {icon: "1", caption: "Рестораны, бары, кафе"},
+                    {icon: "2", caption: "Покупки"},
+                    {icon: "3", caption: "Развлечения"},
+                    {icon: "4", caption: "Образование"},
+                    {icon: "5", caption: "Дети"},
+                    {icon: "6", caption: "Работа"},
+                    {icon: "7", caption: "Жилье"},
+                    {icon: "8", caption: "Переезд/перелет"},
+                    {icon: "9", caption: "Право и закон"},
+                    {icon: "10", caption: "Финансы и банки"},
+                    {icon: "11", caption: "Общество"},
+                    {icon: "12", caption: "Спорт"},
+                    {icon: "13", caption: "Туризм"},
+                    {icon: "14", caption: "Медицина"},
+                    {icon: "15", caption: "Животные"},
+                    {icon: "16", caption: "Красота и уход"},
+                    {icon: "17", caption: "Транспорт"},
+                    {icon: "18", caption: "Быт"},
+                    {icon: "19", caption: "Личный опыт"},
+                    {icon: "20", caption: "Культура"},
+                    {icon: "21", caption: "Спецпроект"},
                 ]
 
             ul.section-blog__sidebar-list
                 each item in list
                     li
                         a(href="#")
-                            span.icon: img(loading="lazy" src="img/blog/"+item.icon+".svg" width=25 height=25)
+                            span.icon: img(loading="lazy" src="img/blog/" + item.icon + ".svg" width=25 height=25)
                             span=item.caption
 
             .section-blog__sidebar-bg
     .section-blog__content
         .container
             .section-blog__article
+                .section-blog__article-image
+                    picture
+                        source(srcset="img/blog-detail/bg-1.webp" type="image/webp" media="(min-width: 767px)")
+                        source(srcset="img/blog-detail/bg-1.png" type="image/png" media="(min-width: 767px)")
+                        source(srcset="img/blog-detail/bg.webp" type="image/webp")
+                        img(loading="lazy" src="img/blog-detail/bg.png" width=300 height=230)
+                    h1.blog-details__h1 10 стран с высоким уровнем преступности, которые привлекают путешественников
+                    .section-blog__article-actions
+                        .section-blog__article-comment
+                            span 13
+                            +icons("#ic_comment", 25)
+                        .section-blog__article-share: +icons('#ic_share',25)
+                .section-blog__article-head
+                    h1.blog-details__h1 10 стран с высоким уровнем преступности, которые привлекают путешественников
+                    .author
+                        .author-image
+                            picture
+                                source(srcset="img/blog/author-1.webp" type="image/webp")
+                                img(loading="lazy" src="img/blog/author-1.png" width=24 height=24)
+                        .author-name Яна Рубинкова
+                    .date 20.05.22
+                    .actions.section-blog__article-actions
+                        .section-blog__article-comment
+                            span 13
+                            +icons("#ic_comment", 25)
+                        .section-blog__article-share: +icons('#ic_share',25)
+                    .tags.section-blog__article-tags
+                        a(href="#").tags-item #туризм
+                .section-blog__article-text.formated-text
+                    h3 По версии Numbeo, в рейтинг стран с самым высоким уровнем преступности в 2022 году попали ЮАР, Ямайка и другие экзотические направления.
+                    p Во всех этих государствах есть что посмотреть. Например, в Венесуэле это самый высокий в мире водопад, в Сальвадоре — большой архитектурный комплекс эпохи майя, в Гондурасе — пляжи с белоснежным песком у Карибского моря. Туда хочется полететь, но власти многих стран не рекомендуют этого делать: где-то идет гражданская война и часто случаются теракты, а где-то постоянно грабят и насилуют.
+                    p Путешественнику, который решится отправиться в опасную страну, стоит всегда быть начеку: например, не ходить по одному и тому же маршруту. Возможно, где-то придется нанять вооруженную охрану, чтобы просто добраться из аэропорта в город, а с наступлением темноты прятаться в отеле, который обнесен высоким забором с колючей проволокой.
+                    p Расскажу в статье, что же произошло в этих странах и с какими опасностями там может столкнуться турист.
+                    h2 О каких странах расскажу
+                    p: a(href="#") Венесуэла
+                    p: a(href="#") Папуа — Новая Гвинея
+                    p: a(href="#") Афганистан
+                    p: a(href="#") ЮАР
+                    p: a(href="#") Гондурас
+                    h2 Венесуэла
+                    picture
+                        source(srcset="img/blog-detail/1-1.webp" type="image/webp" media="(min-width: 767px)")
+                        source(srcset="img/blog-detail/1-1.png" type="image/png" media="(min-width: 767px)")
+                        source(srcset="img/blog-detail/1.webp" type="image/webp")
+                        img(loading="lazy" src="img/blog-detail/1.png" width=300 height=220)
+                    h3 Что произошло
+                    p Венесуэла сильно зависит от добычи нефти, и когда в первой половине 2010-х цена на нее упала, государство оказалось на грани коллапса. Ситуацию усугубили экономический и политический кризисы и санкции США.
+                    p В результате национальная валюта обесценилась, наступил дефицит продуктов и товаров первой необходимости, начались перебои с электричеством и водоснабжением, разгул преступности в городах и эмиграция миллионов венесуэльцев в соседние страны. Какое-то время в столице — Каракасе — шли уличные бои, но в итоге противостояние действующего президента и оппозиции не переросло в гражданскую войну.
+                    .bordered-text
+                        p
+                            strong Индекс преступности по Numbeo:
+                            span  83,58 из 100
+                        p
+                            strong Где находится:
+                            span  на севере Южной Америки, выходит к Карибскому морю
+                    h3 Чем опасна
+                    p Чем опасна. В Венесуэле распространены вооруженные ограбления и похищения людей, особенно в приграничных районах. Еще часто угоняют автомобили. Обчистить карманы могут не только в трущобах Каракаса, но и на пляже, в очереди в супермаркете. В метро и автобусах тоже орудуют карманники. Такси на улице лучше не ловить: за рулем может оказаться преступник. В Венесуэле есть десятки впечатляющих достопримечательностей. Например, там расположен самый высокий в мире водопад Анхель, его высота — 979 метров. В нацпарке «Канайма» туристы смотрят на завораживающие тепуи — столовые горы. Из города Мерида на андский пик Эспехо ведет канатная дорога «Телеферико-де-Мерида» длиной 12,5 километра, путь на высоту 4765 метров занимает два часа. А венесуэльский остров Маргарита называют островом вечного лета — туроператоры преподносят его как альтернативу Кубе.
+                    .splide
+                        .splide__track
+                            ul.splide__list
+                                li.splide__slide
+                                    picture
+                                        source(srcset="img/blog/slide-1.webp" type="image/webp" media="(min-width: 767px)")
+                                        source(srcset="img/blog/slide-1.png" type="image/png" media="(min-width: 767px)")
+                                        source(srcset="img/blog/slide.webp" type="image/webp")
+                                        img(loading="lazy" src="img/blog/slide.png" width=300 height=220)
+                                li.splide__slide
+                                    picture
+                                        source(srcset="img/blog/slide-1.webp" type="image/webp" media="(min-width: 767px)")
+                                        source(srcset="img/blog/slide-1.png" type="image/png" media="(min-width: 767px)")
+                                        source(srcset="img/blog/slide.webp" type="image/webp")
+                                        img(loading="lazy" src="img/blog/slide.png" width=300 height=220)
+                            .splide__arrows
+                                button.splide__arrow.splide__arrow--prev
+                                    +icons("#ic_arrow-slider", 24)
+                                button.splide__arrow.splide__arrow--next
+                                    +icons("#ic_arrow-slider", 24)
+                    h3 Климат Венесуэлы
+                    p На большей части территории страны доминирует субэкваториальный климат. А так как расположена она лишь немногим севернее экватора, температура в течение года изменяется слабо. Например, в Каракасе — от +18 до +20 °C, а в Маракайбо — от +27 до +29 °C. В горных районах температура в январе держится в пределах +4...+9 °С, летом же она может доходить до +23 °C.
+                    p Лучшее время для посещения страны — с ноября по май, но некоторые всемирно известные достопримечательности (водопад Анхель и другие) наиболее живописны именно в период дождей. В сухой сезон подобраться к водопаду по суше невозможно — только на вертолете. Смотрите также актуальный прогноз погоды на основных венесуэльских курортах на ближайшие дни.
+                    .marked-text
+                        p Самое популярное слово в Венесуэле manana, которое здесь помимо своего исходного значения «завтра», имеет множество других переводов и употребляется местными жителями по любому поводу.
+                    h3 Кухня и рестораны Венесуэлы
+                    p Как и у многих других стран Латинской Америки, основа кухни Венесуэлы — это мясо, бобовые, кукуруза, особые бананы, а также множество овощей и специй, часто используемых в самых непредсказуемых комбинациях.
+                    p Чаевые обычно составляют 10 % от суммы счета. Большинство баров и ресторанов автоматически добавляют к счету именно столько, но даже в этом случае принято дать на чай непосредственно официанту. Чаще всего деньги просто оставляют на столе.
+                    figure
+                        picture
+                            source(srcset="img/blog/fall-1.webp" type="image/webp" media="(min-width: 767px)")
+                            source(srcset="img/blog/fall-1.png" type="image/png" media="(min-width: 767px)")
+                            source(srcset="img/blog/fall.webp" type="image/webp")
+                            img(loading="lazy" src="img/blog/fall.png" width=300 height=220)
+                        figcaption Водопад Анхель. Источник: Claudio Soldi / Shutterstock
+                    h3 Банки и обменные пункты Венесуэлы
+                    p Банки обычно работают с понедельника по пятницу с 8:30 до 15:30. Валюту можно обменять в обменных пунктах casa de cambio, в аэропорту, банках, гостиницах, магазинах и транспортных агентствах. Обратный обмен местной валюты — задача непростая.
+                    p В стране выгодно обменивать доллары США, евро менее популярен. На рынках и в частных заведениях можно рассчитаться долларами США.
+                    .marked-text.filled
+                        p: strong В Венесуэле не стоит пользоваться банковскими карточками. И вот почему: официальный курс очень сильно отличается от «черного» курса, а при расчете банковской картой вас рассчитают именно по официальному курсу. Чтобы не стать жертвой спекуляций, лучше производить обмен у сопровождающих гидов.
+                .section-blog__article-actions.bottom
+                    .tags.section-blog__article-tags
+                        a(href="#").tags-item #туризм
+                    .section-blog__article-share: +icons('#ic_share',25)
+                .section-blog__article-comments
+                    .user
+                        .user-image
+                            picture
+                                source(srcset="img/blog/author-1.webp" type="image/webp")
+                                img(loading="lazy" src="img/blog/author-1.png" width=24 height=24)
+                        .user-name Яна Рубинкова
+                    .question В каких опасных странах вы бывали?
+                    form.comment-form.form
+                        .form__item
+                            .textarea
+                                textarea(placeholder="Написать комментарий")
+                            label.input.input-file
+                                +icons("#ic_file", 30)
+                                input(type="file")
+                        .form__note *Комментарии проходят модерацию
+                        .form__submit
+                            button(type="submit").btn Отправить
+                    .comment-area
+                        .comment-area__sort
+                            .comment-area__sort-item.is-active По рейтингу
+                            .comment-area__sort-item По дате
+                        ul.comment-area__comments
+                            li.comment-area__comments-item
+                                .user
+                                    .user-image
+                                        picture
+                                            source(srcset="img/blog/author-1.webp" type="image/webp")
+                                            img(loading="lazy" src="img/blog/author-1.png" width=24 height=24)
+                                    .user-name Арсен Симонян
+                                    .user-datetime 17.02.22, 07:40
+                                .status На модерации
+                                .text Я удивился не найдя в списке Бразилии. У меня друзья там установили мировой рекорд по бегу из фавел.
+                                .actions
+                                    a(href="#").actions-answer Ответить
+                                    .actions-rate
+                                        .actions-rate__dec: +icons("#ic_down", 18)
+                                        .actions-rate__value 0
+                                        .actions-rate__inc: +icons("#ic_up", 18)
+                            li.comment-area__comments-item
+                                .user
+                                    .user-image
+                                        picture
+                                            source(srcset="img/blog/author-1.webp" type="image/webp")
+                                            img(loading="lazy" src="img/blog/author-1.png" width=24 height=24)
+                                    .user-name Владимир В.
+                                    .user-datetime 15.02.20, 07:55
+                                .text Ни в одной не была, хотя планировала в ЮАР из-за национального парка собственно. Но есть и другие более благополучные страны в Африке, где тоже животных можно посмотреть. Вообще не могу себе представить ни одной причины чтобы посетить какую-либо из вышеперечисленных стран. Ведь есть много всего на нашей планете, что даже более живописно, но безопаснее. А жизнь - она одна. Как и здоровье.
+                                .actions
+                                    a(href="#").actions-answer Ответить
+                                    .actions-rate
+                                        .actions-rate__dec: +icons("#ic_down", 18)
+                                        .actions-rate__value 13
+                                        .actions-rate__inc: +icons("#ic_up", 18)
+                            li.comment-area__comments-item
+                                .user
+                                    .user-image
+                                        picture
+                                            source(srcset="img/blog/author-1.webp" type="image/webp")
+                                            img(loading="lazy" src="img/blog/author-1.png" width=24 height=24)
+                                    .user-name Мириам Соломонова
+                                    .user-datetime 17.02.22, 09:45
+                                .text Лядов про картели Мексики снимал, вот там реально парень без страха.
+                                .actions
+                                    a(href="#").actions-answer Ответить
+                                    .actions-rate
+                                        .actions-rate__dec: +icons("#ic_down", 18)
+                                        .actions-rate__value 2
+                                        .actions-rate__inc: +icons("#ic_up", 18)
+                            li.comment-area__comments-item
+                                .user
+                                    .user-image
+                                        picture
+                                            source(srcset="img/blog/author-1.webp" type="image/webp")
+                                            img(loading="lazy" src="img/blog/author-1.png" width=24 height=24)
+                                    .user-name Лилия Симонян
+                                    .user-datetime 19.02.22, 16:13
+                                .text С одной стороны интересно, с другой стороны нафиг так жить и вечно бояться, опасаться.
+                                .actions
+                                    a(href="#").actions-answer Ответить
+                                    .actions-rate
+                                        .actions-rate__dec: +icons("#ic_down", 18)
+                                        .actions-rate__value 10
+                                        .actions-rate__inc: +icons("#ic_up", 18)
+                                ul.answers
+                                    li.comment-area__comments-item
+                                        .user
+                                            .user-image
+                                                picture
+                                                    source(srcset="img/blog/author-1.webp" type="image/webp")
+                                                    img(loading="lazy" src="img/blog/author-1.png" width=24 height=24)
+                                            .user-name Баграт П.
+                                            .user-datetime 17.02.22, 10:23
+                                        .text В плане сафари самые интересные страны - Кения и Танзания. Но даже если ЮАР, то переживать не стоит - если брать пакетный тур на сафари, то вас не выпустят из виду и даже близко не повезут к опасным районам)
+                                        .actions
+                                            a(href="#").actions-answer Ответить
+                                            .actions-rate
+                                                .actions-rate__dec: +icons("#ic_down", 18)
+                                                .actions-rate__value 1
+                                                .actions-rate__inc: +icons("#ic_up", 18)
+                                        ul.answers
+                                            li.comment-area__comments-item
+                                                .user
+                                                    .user-image
+                                                        picture
+                                                            source(srcset="img/blog/author-1.webp" type="image/webp")
+                                                            img(loading="lazy" src="img/blog/author-1.png" width=24 height=24)
+                                                    .user-name Полина Рахманова
+                                                    .user-datetime 18.02.22, 12:00
+                                                .text какой классный опыт! реально мир посмотрели, а не вот это все по Праге погулять и пиво попить)
+                                                .actions
+                                                    a(href="#").actions-answer Ответить
+                                                    .actions-rate
+                                                        .actions-rate__dec: +icons("#ic_down", 18)
+                                                        .actions-rate__value 0
+                                                        .actions-rate__inc: +icons("#ic_up", 18)
+                                            .answers-more
+                                                .answers-more__images
+                                                    .answers-more__image
+                                                        picture
+                                                            source(srcset="img/blog/author-1.webp" type="image/webp")
+                                                            img(loading="lazy" src="img/blog/author-1.png" width=24 height=24)
+
+                                                    .answers-more__image
+                                                        picture
+                                                            source(srcset="img/blog/author-1.webp" type="image/webp")
+                                                            img(loading="lazy" src="img/blog/author-1.png" width=24 height=24)
+                                                    .answers-more__image
+                                                        picture
+                                                            source(srcset="img/blog/author-1.webp" type="image/webp")
+                                                            img(loading="lazy" src="img/blog/author-1.png" width=24 height=24)
+                                                    .answers-more__image
+                                                        picture
+                                                            source(srcset="img/blog/author-1.webp" type="image/webp")
+                                                            img(loading="lazy" src="img/blog/author-1.png" width=24 height=24)
+                                                .answers-more__toggle Ещё 12 комментариев
+                        form.comment-area__form.comment-form.form
+                            .form__item
+                                .textarea
+                                    textarea(placeholder="Написать комментарий")
+                                label.input.input-file
+                                    +icons("#ic_file", 30)
+                                    input(type="file")
+                            .form__note *Комментарии проходят модерацию
+                            .form__submit
+                                button(type="submit").btn Отправить
+    .section-blog__interest.section-blog__sect
+        .container
+            .title Это интересно
+            .splide
+                .splide__track
+                    ul.splide__list
+                        -
+                            var blog = [
+                                {
+                                    image: "img/blog/blog-1",
+                                    author: "img/blog/author-1",
+                                    name: "Яна Рубинкова",
+                                    time: "3 часа",
+                                    title: "Может ли Евросоюз запретить выдачу шенгенских виз",
+                                    desc: "30 и 31 августа министры иностранных дел ЕС обсудят запрет на выдачу шенгенских виз гражданам России.",
+                                    tags: ["#туризм"],
+                                    comment: 5,
+                                },
+                                {
+                                    image: "img/blog/blog-2",
+                                    author: "img/blog/author-2",
+                                    name: "Ильяс Шаповалов",
+                                    time: "7 часов",
+                                    title: "Депрессия и ВИЧ: чем болеют жители больших городов",
+                                    desc: "По данным ВОЗ, жители больших городов по всему миру чаще всего страдают от 10 заболеваний. В России...",
+                                    tags: ["#медицина"],
+                                    comment: 13,
+                                },
+                                {
+                                    image: "img/blog/blog-3",
+                                    author: "img/blog/author-3",
+                                    name: "Яна Рубинкова",
+                                    time: "21.05.22",
+                                    title: "Дорогие покупки, о которых не пришлось жалеть",
+                                    desc: "Мы уже публиковали альбом дорогих приобретений, которые делают наших читателей счастливее.",
+                                    tags: ["#покупки"],
+                                    comment: 13,
+                                }
+                            ]
+
+                        each item in blog
+                            li.splide__slide
+                                a(href = "#").section-blog__item
+                                    .section-blog__item-image
+                                        picture
+                                            source(srcset = item.image + ".webp" type = "image/webp")
+                                            img(loading = "lazy" src = item.image + ".png" width = 290 height = 178)
+                                    .section-blog__item-head
+                                        .section-blog__item-author
+                                            .image
+                                                picture
+                                                    source(srcset=item.author + ".webp" type="image/webp")
+                                                    img(loading="lazy" src=item.author + ".png" width=24 height=24)
+                                            .name=item.name
+                                            .time=item.time
+                                        .section-blog__item-share: +icons("#ic_share", 25)
+                                    .section-blog__item-title=item.title
+                                    .section-blog__item-desc=item.desc
+                                    .section-blog__item-footer
+                                        .section-blog__item-tags
+                                            each tag in item.tags
+                                                .section-blog__item-tag=tag
+                                        .section-blog__item-comments
+                                            span=item.comment
+                                                +icons('#ic_comment', 25)
+
+
+    .section-blog__popular.section-blog__sect
+        .container
+            .title Популярное за месяц
+            .splide
+                .splide__track
+                    ul.splide__list
+                        each item in blog
+                            li.splide__slide
+                                a(href = "#").section-blog__item
+                                    .section-blog__item-image
+                                        picture
+                                            source(srcset = item.image + ".webp" type = "image/webp")
+                                            img(loading = "lazy" src = item.image + ".png" width = 290 height = 178)
+                                    .section-blog__item-head
+                                        .section-blog__item-author
+                                            .image
+                                                picture
+                                                    source(srcset=item.author + ".webp" type="image/webp")
+                                                    img(loading="lazy" src=item.author + ".png" width=24 height=24)
+                                            .name=item.name
+                                            .time=item.time
+                                        .section-blog__item-share: +icons("#ic_share", 25)
+                                    .section-blog__item-title=item.title
+                                    .section-blog__item-desc=item.desc
+                                    .section-blog__item-footer
+                                        .section-blog__item-tags
+                                            each tag in item.tags
+                                                .section-blog__item-tag=tag
+                                        .section-blog__item-comments
+                                            span=item.comment
+                                                +icons('#ic_comment', 25)
+
+
+
+
